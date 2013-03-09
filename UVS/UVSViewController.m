@@ -16,10 +16,6 @@
 
 - (void)viewDidLoad
 {
-    
-    UIImage *image = [UIImage imageNamed:@"/home/student/umbruner/Desktop/UVS/UVS/UVS/logo-3-PSD-TEXT-TRANS-PNG-SM.png"];
-    UIImageView *imageview = [[UIImageView alloc] initWithImage: image];
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
