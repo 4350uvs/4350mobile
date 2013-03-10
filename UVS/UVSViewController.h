@@ -10,7 +10,6 @@
 
 @interface UVSViewController : UIViewController
 
-@property (strong, nonatomic) UIImageView *imageview;
-@property (strong, nonatomic) IBOutlet UIImageView *image;
+@property (strong, nonatomic) IBOutlet UILabel* jsonReturn;
 
 @end
