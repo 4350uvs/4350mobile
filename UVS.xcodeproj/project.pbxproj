@@ -7,161 +7,163 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CBEA2E3E16E5231300768173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEA2E3D16E5231300768173 /* UIKit.framework */; };
-		CBEA2E4016E5231300768173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEA2E3F16E5231300768173 /* Foundation.framework */; };
-		CBEA2E4216E5231300768173 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEA2E4116E5231300768173 /* CoreGraphics.framework */; };
-		CBEA2E4816E5231300768173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBEA2E4616E5231300768173 /* InfoPlist.strings */; };
-		CBEA2E4A16E5231300768173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA2E4916E5231300768173 /* main.m */; };
-		CBEA2E4E16E5231300768173 /* UVSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA2E4D16E5231300768173 /* UVSAppDelegate.m */; };
-		CBEA2E5716E5231300768173 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEA2E5516E5231300768173 /* MainStoryboard_iPhone.storyboard */; };
-		CBEA2E5A16E5231300768173 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEA2E5816E5231300768173 /* MainStoryboard_iPad.storyboard */; };
-		CBEA2E5D16E5231300768173 /* UVSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA2E5C16E5231300768173 /* UVSViewController.m */; };
-		CBEA2E6516E5231300768173 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEA2E6416E5231300768173 /* SenTestingKit.framework */; };
-		CBEA2E6616E5231300768173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEA2E3D16E5231300768173 /* UIKit.framework */; };
-		CBEA2E6716E5231300768173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEA2E3F16E5231300768173 /* Foundation.framework */; };
-		CBEA2E6F16E5231300768173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBEA2E6D16E5231300768173 /* InfoPlist.strings */; };
-		CBEA2E7216E5231300768173 /* UVSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA2E7116E5231300768173 /* UVSTests.m */; };
-		CBEA2E7C16E52A3C00768173 /* logo-3-PSD-TEXT-TRANS-PNG-SM.png in Resources */ = {isa = PBXBuildFile; fileRef = CBEA2E7B16E52A3C00768173 /* logo-3-PSD-TEXT-TRANS-PNG-SM.png */; };
-		CBEA2E7E16E5320700768173 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBEA2E7D16E5320700768173 /* Default-568h@2x.png */; };
-		CBEA2E8016E5321200768173 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CBEA2E7F16E5321200768173 /* Default.png */; };
-		CBEA2E8216E5321900768173 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBEA2E8116E5321900768173 /* Default@2x.png */; };
+		CB4DE4B016EE4C85008BA0B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4DE4AF16EE4C85008BA0B7 /* UIKit.framework */; };
+		CB4DE4B216EE4C85008BA0B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4DE4B116EE4C85008BA0B7 /* Foundation.framework */; };
+		CB4DE4B416EE4C85008BA0B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4DE4B316EE4C85008BA0B7 /* CoreGraphics.framework */; };
+		CB4DE4BA16EE4C85008BA0B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4B816EE4C85008BA0B7 /* InfoPlist.strings */; };
+		CB4DE4BC16EE4C85008BA0B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4DE4BB16EE4C85008BA0B7 /* main.m */; };
+		CB4DE4C016EE4C85008BA0B7 /* UVSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4DE4BF16EE4C85008BA0B7 /* UVSAppDelegate.m */; };
+		CB4DE4C216EE4C85008BA0B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4C116EE4C85008BA0B7 /* Default.png */; };
+		CB4DE4C416EE4C85008BA0B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4C316EE4C85008BA0B7 /* Default@2x.png */; };
+		CB4DE4C616EE4C85008BA0B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4C516EE4C85008BA0B7 /* Default-568h@2x.png */; };
+		CB4DE4C916EE4C85008BA0B7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4C716EE4C85008BA0B7 /* MainStoryboard_iPhone.storyboard */; };
+		CB4DE4CC16EE4C85008BA0B7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4CA16EE4C85008BA0B7 /* MainStoryboard_iPad.storyboard */; };
+		CB4DE4CF16EE4C85008BA0B7 /* UVSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4DE4CE16EE4C85008BA0B7 /* UVSViewController.m */; };
+		CB4DE4D716EE4C85008BA0B7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4DE4D616EE4C85008BA0B7 /* SenTestingKit.framework */; };
+		CB4DE4D816EE4C85008BA0B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4DE4AF16EE4C85008BA0B7 /* UIKit.framework */; };
+		CB4DE4D916EE4C85008BA0B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4DE4B116EE4C85008BA0B7 /* Foundation.framework */; };
+		CB4DE4E116EE4C86008BA0B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4DF16EE4C86008BA0B7 /* InfoPlist.strings */; };
+		CB4DE4E416EE4C86008BA0B7 /* UVSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4DE4E316EE4C86008BA0B7 /* UVSTests.m */; };
+		CB4DE4F416EE600C008BA0B7 /* UVSViewVotePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4DE4F316EE600C008BA0B7 /* UVSViewVotePoll.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CBEA2E6816E5231300768173 /* PBXContainerItemProxy */ = {
+		CB4DE4DA16EE4C85008BA0B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CBEA2E3216E5231300768173 /* Project object */;
+			containerPortal = CB4DE4A416EE4C85008BA0B7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CBEA2E3916E5231300768173;
+			remoteGlobalIDString = CB4DE4AB16EE4C85008BA0B7;
 			remoteInfo = UVS;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CBEA2E3A16E5231300768173 /* UVS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UVS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBEA2E3D16E5231300768173 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CBEA2E3F16E5231300768173 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CBEA2E4116E5231300768173 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CBEA2E4516E5231300768173 /* UVS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UVS-Info.plist"; sourceTree = "<group>"; };
-		CBEA2E4716E5231300768173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CBEA2E4916E5231300768173 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CBEA2E4B16E5231300768173 /* UVS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UVS-Prefix.pch"; sourceTree = "<group>"; };
-		CBEA2E4C16E5231300768173 /* UVSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSAppDelegate.h; sourceTree = "<group>"; };
-		CBEA2E4D16E5231300768173 /* UVSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSAppDelegate.m; sourceTree = "<group>"; };
-		CBEA2E5616E5231300768173 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		CBEA2E5916E5231300768173 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		CBEA2E5B16E5231300768173 /* UVSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSViewController.h; sourceTree = "<group>"; };
-		CBEA2E5C16E5231300768173 /* UVSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSViewController.m; sourceTree = "<group>"; };
-		CBEA2E6316E5231300768173 /* UVSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UVSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBEA2E6416E5231300768173 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		CBEA2E6C16E5231300768173 /* UVSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UVSTests-Info.plist"; sourceTree = "<group>"; };
-		CBEA2E6E16E5231300768173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CBEA2E7016E5231300768173 /* UVSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSTests.h; sourceTree = "<group>"; };
-		CBEA2E7116E5231300768173 /* UVSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSTests.m; sourceTree = "<group>"; };
-		CBEA2E7B16E52A3C00768173 /* logo-3-PSD-TEXT-TRANS-PNG-SM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-3-PSD-TEXT-TRANS-PNG-SM.png"; sourceTree = "<group>"; };
-		CBEA2E7D16E5320700768173 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CBEA2E7F16E5321200768173 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CBEA2E8116E5321900768173 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CB4DE4AC16EE4C85008BA0B7 /* UVS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UVS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4DE4AF16EE4C85008BA0B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CB4DE4B116EE4C85008BA0B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB4DE4B316EE4C85008BA0B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CB4DE4B716EE4C85008BA0B7 /* UVS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UVS-Info.plist"; sourceTree = "<group>"; };
+		CB4DE4B916EE4C85008BA0B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB4DE4BB16EE4C85008BA0B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB4DE4BD16EE4C85008BA0B7 /* UVS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UVS-Prefix.pch"; sourceTree = "<group>"; };
+		CB4DE4BE16EE4C85008BA0B7 /* UVSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSAppDelegate.h; sourceTree = "<group>"; };
+		CB4DE4BF16EE4C85008BA0B7 /* UVSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSAppDelegate.m; sourceTree = "<group>"; };
+		CB4DE4C116EE4C85008BA0B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CB4DE4C316EE4C85008BA0B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CB4DE4C516EE4C85008BA0B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CB4DE4C816EE4C85008BA0B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		CB4DE4CB16EE4C85008BA0B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		CB4DE4CD16EE4C85008BA0B7 /* UVSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSViewController.h; sourceTree = "<group>"; };
+		CB4DE4CE16EE4C85008BA0B7 /* UVSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSViewController.m; sourceTree = "<group>"; };
+		CB4DE4D516EE4C85008BA0B7 /* UVSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UVSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4DE4D616EE4C85008BA0B7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CB4DE4DE16EE4C86008BA0B7 /* UVSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UVSTests-Info.plist"; sourceTree = "<group>"; };
+		CB4DE4E016EE4C86008BA0B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB4DE4E216EE4C86008BA0B7 /* UVSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSTests.h; sourceTree = "<group>"; };
+		CB4DE4E316EE4C86008BA0B7 /* UVSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSTests.m; sourceTree = "<group>"; };
+		CB4DE4F216EE6004008BA0B7 /* UVSViewVotePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSViewVotePoll.h; sourceTree = "<group>"; };
+		CB4DE4F316EE600C008BA0B7 /* UVSViewVotePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewVotePoll.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CBEA2E3716E5231300768173 /* Frameworks */ = {
+		CB4DE4A916EE4C85008BA0B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBEA2E3E16E5231300768173 /* UIKit.framework in Frameworks */,
-				CBEA2E4016E5231300768173 /* Foundation.framework in Frameworks */,
-				CBEA2E4216E5231300768173 /* CoreGraphics.framework in Frameworks */,
+				CB4DE4B016EE4C85008BA0B7 /* UIKit.framework in Frameworks */,
+				CB4DE4B216EE4C85008BA0B7 /* Foundation.framework in Frameworks */,
+				CB4DE4B416EE4C85008BA0B7 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBEA2E5F16E5231300768173 /* Frameworks */ = {
+		CB4DE4D116EE4C85008BA0B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBEA2E6516E5231300768173 /* SenTestingKit.framework in Frameworks */,
-				CBEA2E6616E5231300768173 /* UIKit.framework in Frameworks */,
-				CBEA2E6716E5231300768173 /* Foundation.framework in Frameworks */,
+				CB4DE4D716EE4C85008BA0B7 /* SenTestingKit.framework in Frameworks */,
+				CB4DE4D816EE4C85008BA0B7 /* UIKit.framework in Frameworks */,
+				CB4DE4D916EE4C85008BA0B7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CBEA2E3116E5231300768173 = {
+		CB4DE4A316EE4C84008BA0B7 = {
 			isa = PBXGroup;
 			children = (
-				CBEA2E4316E5231300768173 /* UVS */,
-				CBEA2E6A16E5231300768173 /* UVSTests */,
-				CBEA2E3C16E5231300768173 /* Frameworks */,
-				CBEA2E3B16E5231300768173 /* Products */,
+				CB4DE4B516EE4C85008BA0B7 /* UVS */,
+				CB4DE4DC16EE4C85008BA0B7 /* UVSTests */,
+				CB4DE4AE16EE4C85008BA0B7 /* Frameworks */,
+				CB4DE4AD16EE4C85008BA0B7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CBEA2E3B16E5231300768173 /* Products */ = {
+		CB4DE4AD16EE4C85008BA0B7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBEA2E3A16E5231300768173 /* UVS.app */,
-				CBEA2E6316E5231300768173 /* UVSTests.octest */,
+				CB4DE4AC16EE4C85008BA0B7 /* UVS.app */,
+				CB4DE4D516EE4C85008BA0B7 /* UVSTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CBEA2E3C16E5231300768173 /* Frameworks */ = {
+		CB4DE4AE16EE4C85008BA0B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CBEA2E3D16E5231300768173 /* UIKit.framework */,
-				CBEA2E3F16E5231300768173 /* Foundation.framework */,
-				CBEA2E4116E5231300768173 /* CoreGraphics.framework */,
-				CBEA2E6416E5231300768173 /* SenTestingKit.framework */,
+				CB4DE4AF16EE4C85008BA0B7 /* UIKit.framework */,
+				CB4DE4B116EE4C85008BA0B7 /* Foundation.framework */,
+				CB4DE4B316EE4C85008BA0B7 /* CoreGraphics.framework */,
+				CB4DE4D616EE4C85008BA0B7 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CBEA2E4316E5231300768173 /* UVS */ = {
+		CB4DE4B516EE4C85008BA0B7 /* UVS */ = {
 			isa = PBXGroup;
 			children = (
-				CBEA2E4C16E5231300768173 /* UVSAppDelegate.h */,
-				CBEA2E4D16E5231300768173 /* UVSAppDelegate.m */,
-				CBEA2E5516E5231300768173 /* MainStoryboard_iPhone.storyboard */,
-				CBEA2E5816E5231300768173 /* MainStoryboard_iPad.storyboard */,
-				CBEA2E5B16E5231300768173 /* UVSViewController.h */,
-				CBEA2E5C16E5231300768173 /* UVSViewController.m */,
-				CBEA2E4416E5231300768173 /* Supporting Files */,
+				CB4DE4F316EE600C008BA0B7 /* UVSViewVotePoll.m */,
+				CB4DE4F216EE6004008BA0B7 /* UVSViewVotePoll.h */,
+				CB4DE4BE16EE4C85008BA0B7 /* UVSAppDelegate.h */,
+				CB4DE4BF16EE4C85008BA0B7 /* UVSAppDelegate.m */,
+				CB4DE4C716EE4C85008BA0B7 /* MainStoryboard_iPhone.storyboard */,
+				CB4DE4CA16EE4C85008BA0B7 /* MainStoryboard_iPad.storyboard */,
+				CB4DE4CD16EE4C85008BA0B7 /* UVSViewController.h */,
+				CB4DE4CE16EE4C85008BA0B7 /* UVSViewController.m */,
+				CB4DE4B616EE4C85008BA0B7 /* Supporting Files */,
 			);
 			path = UVS;
 			sourceTree = "<group>";
 		};
-		CBEA2E4416E5231300768173 /* Supporting Files */ = {
+		CB4DE4B616EE4C85008BA0B7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CBEA2E8116E5321900768173 /* Default@2x.png */,
-				CBEA2E7F16E5321200768173 /* Default.png */,
-				CBEA2E7D16E5320700768173 /* Default-568h@2x.png */,
-				CBEA2E7B16E52A3C00768173 /* logo-3-PSD-TEXT-TRANS-PNG-SM.png */,
-				CBEA2E4516E5231300768173 /* UVS-Info.plist */,
-				CBEA2E4616E5231300768173 /* InfoPlist.strings */,
-				CBEA2E4916E5231300768173 /* main.m */,
-				CBEA2E4B16E5231300768173 /* UVS-Prefix.pch */,
+				CB4DE4B716EE4C85008BA0B7 /* UVS-Info.plist */,
+				CB4DE4B816EE4C85008BA0B7 /* InfoPlist.strings */,
+				CB4DE4BB16EE4C85008BA0B7 /* main.m */,
+				CB4DE4BD16EE4C85008BA0B7 /* UVS-Prefix.pch */,
+				CB4DE4C116EE4C85008BA0B7 /* Default.png */,
+				CB4DE4C316EE4C85008BA0B7 /* Default@2x.png */,
+				CB4DE4C516EE4C85008BA0B7 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CBEA2E6A16E5231300768173 /* UVSTests */ = {
+		CB4DE4DC16EE4C85008BA0B7 /* UVSTests */ = {
 			isa = PBXGroup;
 			children = (
-				CBEA2E7016E5231300768173 /* UVSTests.h */,
-				CBEA2E7116E5231300768173 /* UVSTests.m */,
-				CBEA2E6B16E5231300768173 /* Supporting Files */,
+				CB4DE4E216EE4C86008BA0B7 /* UVSTests.h */,
+				CB4DE4E316EE4C86008BA0B7 /* UVSTests.m */,
+				CB4DE4DD16EE4C86008BA0B7 /* Supporting Files */,
 			);
 			path = UVSTests;
 			sourceTree = "<group>";
 		};
-		CBEA2E6B16E5231300768173 /* Supporting Files */ = {
+		CB4DE4DD16EE4C86008BA0B7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CBEA2E6C16E5231300768173 /* UVSTests-Info.plist */,
-				CBEA2E6D16E5231300768173 /* InfoPlist.strings */,
+				CB4DE4DE16EE4C86008BA0B7 /* UVSTests-Info.plist */,
+				CB4DE4DF16EE4C86008BA0B7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -169,13 +171,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CBEA2E3916E5231300768173 /* UVS */ = {
+		CB4DE4AB16EE4C85008BA0B7 /* UVS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBEA2E7516E5231300768173 /* Build configuration list for PBXNativeTarget "UVS" */;
+			buildConfigurationList = CB4DE4E716EE4C86008BA0B7 /* Build configuration list for PBXNativeTarget "UVS" */;
 			buildPhases = (
-				CBEA2E3616E5231300768173 /* Sources */,
-				CBEA2E3716E5231300768173 /* Frameworks */,
-				CBEA2E3816E5231300768173 /* Resources */,
+				CB4DE4A816EE4C85008BA0B7 /* Sources */,
+				CB4DE4A916EE4C85008BA0B7 /* Frameworks */,
+				CB4DE4AA16EE4C85008BA0B7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -183,83 +185,82 @@
 			);
 			name = UVS;
 			productName = UVS;
-			productReference = CBEA2E3A16E5231300768173 /* UVS.app */;
+			productReference = CB4DE4AC16EE4C85008BA0B7 /* UVS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CBEA2E6216E5231300768173 /* UVSTests */ = {
+		CB4DE4D416EE4C85008BA0B7 /* UVSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBEA2E7816E5231300768173 /* Build configuration list for PBXNativeTarget "UVSTests" */;
+			buildConfigurationList = CB4DE4EA16EE4C86008BA0B7 /* Build configuration list for PBXNativeTarget "UVSTests" */;
 			buildPhases = (
-				CBEA2E5E16E5231300768173 /* Sources */,
-				CBEA2E5F16E5231300768173 /* Frameworks */,
-				CBEA2E6016E5231300768173 /* Resources */,
-				CBEA2E6116E5231300768173 /* ShellScript */,
+				CB4DE4D016EE4C85008BA0B7 /* Sources */,
+				CB4DE4D116EE4C85008BA0B7 /* Frameworks */,
+				CB4DE4D216EE4C85008BA0B7 /* Resources */,
+				CB4DE4D316EE4C85008BA0B7 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CBEA2E6916E5231300768173 /* PBXTargetDependency */,
+				CB4DE4DB16EE4C85008BA0B7 /* PBXTargetDependency */,
 			);
 			name = UVSTests;
 			productName = UVSTests;
-			productReference = CBEA2E6316E5231300768173 /* UVSTests.octest */;
+			productReference = CB4DE4D516EE4C85008BA0B7 /* UVSTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CBEA2E3216E5231300768173 /* Project object */ = {
+		CB4DE4A416EE4C85008BA0B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = UVS;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Richard Bruneau";
 			};
-			buildConfigurationList = CBEA2E3516E5231300768173 /* Build configuration list for PBXProject "UVS" */;
+			buildConfigurationList = CB4DE4A716EE4C85008BA0B7 /* Build configuration list for PBXProject "UVS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CBEA2E3116E5231300768173;
-			productRefGroup = CBEA2E3B16E5231300768173 /* Products */;
+			mainGroup = CB4DE4A316EE4C84008BA0B7;
+			productRefGroup = CB4DE4AD16EE4C85008BA0B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBEA2E3916E5231300768173 /* UVS */,
-				CBEA2E6216E5231300768173 /* UVSTests */,
+				CB4DE4AB16EE4C85008BA0B7 /* UVS */,
+				CB4DE4D416EE4C85008BA0B7 /* UVSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CBEA2E3816E5231300768173 /* Resources */ = {
+		CB4DE4AA16EE4C85008BA0B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBEA2E4816E5231300768173 /* InfoPlist.strings in Resources */,
-				CBEA2E5716E5231300768173 /* MainStoryboard_iPhone.storyboard in Resources */,
-				CBEA2E5A16E5231300768173 /* MainStoryboard_iPad.storyboard in Resources */,
-				CBEA2E7C16E52A3C00768173 /* logo-3-PSD-TEXT-TRANS-PNG-SM.png in Resources */,
-				CBEA2E7E16E5320700768173 /* Default-568h@2x.png in Resources */,
-				CBEA2E8016E5321200768173 /* Default.png in Resources */,
-				CBEA2E8216E5321900768173 /* Default@2x.png in Resources */,
+				CB4DE4BA16EE4C85008BA0B7 /* InfoPlist.strings in Resources */,
+				CB4DE4C216EE4C85008BA0B7 /* Default.png in Resources */,
+				CB4DE4C416EE4C85008BA0B7 /* Default@2x.png in Resources */,
+				CB4DE4C616EE4C85008BA0B7 /* Default-568h@2x.png in Resources */,
+				CB4DE4C916EE4C85008BA0B7 /* MainStoryboard_iPhone.storyboard in Resources */,
+				CB4DE4CC16EE4C85008BA0B7 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBEA2E6016E5231300768173 /* Resources */ = {
+		CB4DE4D216EE4C85008BA0B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBEA2E6F16E5231300768173 /* InfoPlist.strings in Resources */,
+				CB4DE4E116EE4C86008BA0B7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CBEA2E6116E5231300768173 /* ShellScript */ = {
+		CB4DE4D316EE4C85008BA0B7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -275,63 +276,64 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CBEA2E3616E5231300768173 /* Sources */ = {
+		CB4DE4A816EE4C85008BA0B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBEA2E4A16E5231300768173 /* main.m in Sources */,
-				CBEA2E4E16E5231300768173 /* UVSAppDelegate.m in Sources */,
-				CBEA2E5D16E5231300768173 /* UVSViewController.m in Sources */,
+				CB4DE4BC16EE4C85008BA0B7 /* main.m in Sources */,
+				CB4DE4C016EE4C85008BA0B7 /* UVSAppDelegate.m in Sources */,
+				CB4DE4CF16EE4C85008BA0B7 /* UVSViewController.m in Sources */,
+				CB4DE4F416EE600C008BA0B7 /* UVSViewVotePoll.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBEA2E5E16E5231300768173 /* Sources */ = {
+		CB4DE4D016EE4C85008BA0B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBEA2E7216E5231300768173 /* UVSTests.m in Sources */,
+				CB4DE4E416EE4C86008BA0B7 /* UVSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CBEA2E6916E5231300768173 /* PBXTargetDependency */ = {
+		CB4DE4DB16EE4C85008BA0B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBEA2E3916E5231300768173 /* UVS */;
-			targetProxy = CBEA2E6816E5231300768173 /* PBXContainerItemProxy */;
+			target = CB4DE4AB16EE4C85008BA0B7 /* UVS */;
+			targetProxy = CB4DE4DA16EE4C85008BA0B7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CBEA2E4616E5231300768173 /* InfoPlist.strings */ = {
+		CB4DE4B816EE4C85008BA0B7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CBEA2E4716E5231300768173 /* en */,
+				CB4DE4B916EE4C85008BA0B7 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		CBEA2E5516E5231300768173 /* MainStoryboard_iPhone.storyboard */ = {
+		CB4DE4C716EE4C85008BA0B7 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CBEA2E5616E5231300768173 /* en */,
+				CB4DE4C816EE4C85008BA0B7 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		CBEA2E5816E5231300768173 /* MainStoryboard_iPad.storyboard */ = {
+		CB4DE4CA16EE4C85008BA0B7 /* MainStoryboard_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CBEA2E5916E5231300768173 /* en */,
+				CB4DE4CB16EE4C85008BA0B7 /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		CBEA2E6D16E5231300768173 /* InfoPlist.strings */ = {
+		CB4DE4DF16EE4C86008BA0B7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CBEA2E6E16E5231300768173 /* en */,
+				CB4DE4E016EE4C86008BA0B7 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -339,7 +341,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CBEA2E7316E5231300768173 /* Debug */ = {
+		CB4DE4E516EE4C86008BA0B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -371,7 +373,7 @@
 			};
 			name = Debug;
 		};
-		CBEA2E7416E5231300768173 /* Release */ = {
+		CB4DE4E616EE4C86008BA0B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -397,7 +399,7 @@
 			};
 			name = Release;
 		};
-		CBEA2E7616E5231300768173 /* Debug */ = {
+		CB4DE4E816EE4C86008BA0B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -408,7 +410,7 @@
 			};
 			name = Debug;
 		};
-		CBEA2E7716E5231300768173 /* Release */ = {
+		CB4DE4E916EE4C86008BA0B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -419,7 +421,7 @@
 			};
 			name = Release;
 		};
-		CBEA2E7916E5231300768173 /* Debug */ = {
+		CB4DE4EB16EE4C86008BA0B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UVS.app/UVS";
@@ -436,7 +438,7 @@
 			};
 			name = Debug;
 		};
-		CBEA2E7A16E5231300768173 /* Release */ = {
+		CB4DE4EC16EE4C86008BA0B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UVS.app/UVS";
@@ -456,32 +458,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBEA2E3516E5231300768173 /* Build configuration list for PBXProject "UVS" */ = {
+		CB4DE4A716EE4C85008BA0B7 /* Build configuration list for PBXProject "UVS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBEA2E7316E5231300768173 /* Debug */,
-				CBEA2E7416E5231300768173 /* Release */,
+				CB4DE4E516EE4C86008BA0B7 /* Debug */,
+				CB4DE4E616EE4C86008BA0B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBEA2E7516E5231300768173 /* Build configuration list for PBXNativeTarget "UVS" */ = {
+		CB4DE4E716EE4C86008BA0B7 /* Build configuration list for PBXNativeTarget "UVS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBEA2E7616E5231300768173 /* Debug */,
-				CBEA2E7716E5231300768173 /* Release */,
+				CB4DE4E816EE4C86008BA0B7 /* Debug */,
+				CB4DE4E916EE4C86008BA0B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		CBEA2E7816E5231300768173 /* Build configuration list for PBXNativeTarget "UVSTests" */ = {
+		CB4DE4EA16EE4C86008BA0B7 /* Build configuration list for PBXNativeTarget "UVSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBEA2E7916E5231300768173 /* Debug */,
-				CBEA2E7A16E5231300768173 /* Release */,
+				CB4DE4EB16EE4C86008BA0B7 /* Debug */,
+				CB4DE4EC16EE4C86008BA0B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CBEA2E3216E5231300768173 /* Project object */;
+	rootObject = CB4DE4A416EE4C85008BA0B7 /* Project object */;
 }

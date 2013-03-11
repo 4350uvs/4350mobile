@@ -2,7 +2,7 @@
 //  UVSViewController.h
 //  UVS
 //
-//  Created by Richard Bruneau on 2013-03-04.
+//  Created by Richard Bruneau on 2013-03-11.
 //  Copyright (c) 2013 Richard Bruneau. All rights reserved.
 //
 
@@ -10,6 +10,5 @@
 
 @interface UVSViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UILabel* jsonReturn;
 
 @end
