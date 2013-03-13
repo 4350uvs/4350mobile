@@ -7,163 +7,163 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB4DE4B016EE4C85008BA0B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4DE4AF16EE4C85008BA0B7 /* UIKit.framework */; };
-		CB4DE4B216EE4C85008BA0B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4DE4B116EE4C85008BA0B7 /* Foundation.framework */; };
-		CB4DE4B416EE4C85008BA0B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4DE4B316EE4C85008BA0B7 /* CoreGraphics.framework */; };
-		CB4DE4BA16EE4C85008BA0B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4B816EE4C85008BA0B7 /* InfoPlist.strings */; };
-		CB4DE4BC16EE4C85008BA0B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4DE4BB16EE4C85008BA0B7 /* main.m */; };
-		CB4DE4C016EE4C85008BA0B7 /* UVSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4DE4BF16EE4C85008BA0B7 /* UVSAppDelegate.m */; };
-		CB4DE4C216EE4C85008BA0B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4C116EE4C85008BA0B7 /* Default.png */; };
-		CB4DE4C416EE4C85008BA0B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4C316EE4C85008BA0B7 /* Default@2x.png */; };
-		CB4DE4C616EE4C85008BA0B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4C516EE4C85008BA0B7 /* Default-568h@2x.png */; };
-		CB4DE4C916EE4C85008BA0B7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4C716EE4C85008BA0B7 /* MainStoryboard_iPhone.storyboard */; };
-		CB4DE4CC16EE4C85008BA0B7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4CA16EE4C85008BA0B7 /* MainStoryboard_iPad.storyboard */; };
-		CB4DE4CF16EE4C85008BA0B7 /* UVSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4DE4CE16EE4C85008BA0B7 /* UVSViewController.m */; };
-		CB4DE4D716EE4C85008BA0B7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4DE4D616EE4C85008BA0B7 /* SenTestingKit.framework */; };
-		CB4DE4D816EE4C85008BA0B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4DE4AF16EE4C85008BA0B7 /* UIKit.framework */; };
-		CB4DE4D916EE4C85008BA0B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4DE4B116EE4C85008BA0B7 /* Foundation.framework */; };
-		CB4DE4E116EE4C86008BA0B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB4DE4DF16EE4C86008BA0B7 /* InfoPlist.strings */; };
-		CB4DE4E416EE4C86008BA0B7 /* UVSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4DE4E316EE4C86008BA0B7 /* UVSTests.m */; };
-		CB4DE4F416EE600C008BA0B7 /* UVSViewVotePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4DE4F316EE600C008BA0B7 /* UVSViewVotePoll.m */; };
+		CBA322D016F0EF0300C51537 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322CF16F0EF0300C51537 /* UIKit.framework */; };
+		CBA322D216F0EF0300C51537 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322D116F0EF0300C51537 /* Foundation.framework */; };
+		CBA322D416F0EF0300C51537 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322D316F0EF0300C51537 /* CoreGraphics.framework */; };
+		CBA322DA16F0EF0300C51537 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBA322D816F0EF0300C51537 /* InfoPlist.strings */; };
+		CBA322DC16F0EF0300C51537 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA322DB16F0EF0300C51537 /* main.m */; };
+		CBA322E016F0EF0400C51537 /* UVSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA322DF16F0EF0400C51537 /* UVSAppDelegate.m */; };
+		CBA322E216F0EF0400C51537 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA322E116F0EF0400C51537 /* Default.png */; };
+		CBA322E416F0EF0400C51537 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA322E316F0EF0400C51537 /* Default@2x.png */; };
+		CBA322E616F0EF0400C51537 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA322E516F0EF0400C51537 /* Default-568h@2x.png */; };
+		CBA322E916F0EF0400C51537 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA322E716F0EF0400C51537 /* MainStoryboard_iPhone.storyboard */; };
+		CBA322EC16F0EF0400C51537 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA322EA16F0EF0400C51537 /* MainStoryboard_iPad.storyboard */; };
+		CBA322EF16F0EF0400C51537 /* UVSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA322EE16F0EF0400C51537 /* UVSViewController.m */; };
+		CBA322F716F0EF0400C51537 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322F616F0EF0400C51537 /* SenTestingKit.framework */; };
+		CBA322F816F0EF0400C51537 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322CF16F0EF0300C51537 /* UIKit.framework */; };
+		CBA322F916F0EF0400C51537 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322D116F0EF0300C51537 /* Foundation.framework */; };
+		CBA3230116F0EF0400C51537 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBA322FF16F0EF0400C51537 /* InfoPlist.strings */; };
+		CBA3230416F0EF0400C51537 /* UVSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3230316F0EF0400C51537 /* UVSTests.m */; };
+		CBA3230F16F0F34D00C51537 /* UVSViewVotePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CB4DE4DA16EE4C85008BA0B7 /* PBXContainerItemProxy */ = {
+		CBA322FA16F0EF0400C51537 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CB4DE4A416EE4C85008BA0B7 /* Project object */;
+			containerPortal = CBA322C416F0EF0300C51537 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CB4DE4AB16EE4C85008BA0B7;
+			remoteGlobalIDString = CBA322CB16F0EF0300C51537;
 			remoteInfo = UVS;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB4DE4AC16EE4C85008BA0B7 /* UVS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UVS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB4DE4AF16EE4C85008BA0B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CB4DE4B116EE4C85008BA0B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CB4DE4B316EE4C85008BA0B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CB4DE4B716EE4C85008BA0B7 /* UVS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UVS-Info.plist"; sourceTree = "<group>"; };
-		CB4DE4B916EE4C85008BA0B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CB4DE4BB16EE4C85008BA0B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CB4DE4BD16EE4C85008BA0B7 /* UVS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UVS-Prefix.pch"; sourceTree = "<group>"; };
-		CB4DE4BE16EE4C85008BA0B7 /* UVSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSAppDelegate.h; sourceTree = "<group>"; };
-		CB4DE4BF16EE4C85008BA0B7 /* UVSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSAppDelegate.m; sourceTree = "<group>"; };
-		CB4DE4C116EE4C85008BA0B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CB4DE4C316EE4C85008BA0B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CB4DE4C516EE4C85008BA0B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CB4DE4C816EE4C85008BA0B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		CB4DE4CB16EE4C85008BA0B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		CB4DE4CD16EE4C85008BA0B7 /* UVSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSViewController.h; sourceTree = "<group>"; };
-		CB4DE4CE16EE4C85008BA0B7 /* UVSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSViewController.m; sourceTree = "<group>"; };
-		CB4DE4D516EE4C85008BA0B7 /* UVSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UVSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB4DE4D616EE4C85008BA0B7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		CB4DE4DE16EE4C86008BA0B7 /* UVSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UVSTests-Info.plist"; sourceTree = "<group>"; };
-		CB4DE4E016EE4C86008BA0B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CB4DE4E216EE4C86008BA0B7 /* UVSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSTests.h; sourceTree = "<group>"; };
-		CB4DE4E316EE4C86008BA0B7 /* UVSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSTests.m; sourceTree = "<group>"; };
-		CB4DE4F216EE6004008BA0B7 /* UVSViewVotePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSViewVotePoll.h; sourceTree = "<group>"; };
-		CB4DE4F316EE600C008BA0B7 /* UVSViewVotePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewVotePoll.m; sourceTree = "<group>"; };
+		CBA322CC16F0EF0300C51537 /* UVS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UVS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA322CF16F0EF0300C51537 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CBA322D116F0EF0300C51537 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CBA322D316F0EF0300C51537 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CBA322D716F0EF0300C51537 /* UVS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UVS-Info.plist"; sourceTree = "<group>"; };
+		CBA322D916F0EF0300C51537 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CBA322DB16F0EF0300C51537 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBA322DD16F0EF0300C51537 /* UVS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UVS-Prefix.pch"; sourceTree = "<group>"; };
+		CBA322DE16F0EF0300C51537 /* UVSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSAppDelegate.h; sourceTree = "<group>"; };
+		CBA322DF16F0EF0400C51537 /* UVSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSAppDelegate.m; sourceTree = "<group>"; };
+		CBA322E116F0EF0400C51537 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CBA322E316F0EF0400C51537 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CBA322E516F0EF0400C51537 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CBA322E816F0EF0400C51537 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		CBA322EB16F0EF0400C51537 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		CBA322ED16F0EF0400C51537 /* UVSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSViewController.h; sourceTree = "<group>"; };
+		CBA322EE16F0EF0400C51537 /* UVSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSViewController.m; sourceTree = "<group>"; };
+		CBA322F516F0EF0400C51537 /* UVSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UVSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA322F616F0EF0400C51537 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CBA322FE16F0EF0400C51537 /* UVSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UVSTests-Info.plist"; sourceTree = "<group>"; };
+		CBA3230016F0EF0400C51537 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CBA3230216F0EF0400C51537 /* UVSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSTests.h; sourceTree = "<group>"; };
+		CBA3230316F0EF0400C51537 /* UVSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSTests.m; sourceTree = "<group>"; };
+		CBA3230D16F0F34D00C51537 /* UVSViewVotePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSViewVotePoll.h; sourceTree = "<group>"; };
+		CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewVotePoll.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CB4DE4A916EE4C85008BA0B7 /* Frameworks */ = {
+		CBA322C916F0EF0300C51537 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4DE4B016EE4C85008BA0B7 /* UIKit.framework in Frameworks */,
-				CB4DE4B216EE4C85008BA0B7 /* Foundation.framework in Frameworks */,
-				CB4DE4B416EE4C85008BA0B7 /* CoreGraphics.framework in Frameworks */,
+				CBA322D016F0EF0300C51537 /* UIKit.framework in Frameworks */,
+				CBA322D216F0EF0300C51537 /* Foundation.framework in Frameworks */,
+				CBA322D416F0EF0300C51537 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB4DE4D116EE4C85008BA0B7 /* Frameworks */ = {
+		CBA322F116F0EF0400C51537 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4DE4D716EE4C85008BA0B7 /* SenTestingKit.framework in Frameworks */,
-				CB4DE4D816EE4C85008BA0B7 /* UIKit.framework in Frameworks */,
-				CB4DE4D916EE4C85008BA0B7 /* Foundation.framework in Frameworks */,
+				CBA322F716F0EF0400C51537 /* SenTestingKit.framework in Frameworks */,
+				CBA322F816F0EF0400C51537 /* UIKit.framework in Frameworks */,
+				CBA322F916F0EF0400C51537 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CB4DE4A316EE4C84008BA0B7 = {
+		CBA322C316F0EF0300C51537 = {
 			isa = PBXGroup;
 			children = (
-				CB4DE4B516EE4C85008BA0B7 /* UVS */,
-				CB4DE4DC16EE4C85008BA0B7 /* UVSTests */,
-				CB4DE4AE16EE4C85008BA0B7 /* Frameworks */,
-				CB4DE4AD16EE4C85008BA0B7 /* Products */,
+				CBA322D516F0EF0300C51537 /* UVS */,
+				CBA322FC16F0EF0400C51537 /* UVSTests */,
+				CBA322CE16F0EF0300C51537 /* Frameworks */,
+				CBA322CD16F0EF0300C51537 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CB4DE4AD16EE4C85008BA0B7 /* Products */ = {
+		CBA322CD16F0EF0300C51537 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB4DE4AC16EE4C85008BA0B7 /* UVS.app */,
-				CB4DE4D516EE4C85008BA0B7 /* UVSTests.octest */,
+				CBA322CC16F0EF0300C51537 /* UVS.app */,
+				CBA322F516F0EF0400C51537 /* UVSTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CB4DE4AE16EE4C85008BA0B7 /* Frameworks */ = {
+		CBA322CE16F0EF0300C51537 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB4DE4AF16EE4C85008BA0B7 /* UIKit.framework */,
-				CB4DE4B116EE4C85008BA0B7 /* Foundation.framework */,
-				CB4DE4B316EE4C85008BA0B7 /* CoreGraphics.framework */,
-				CB4DE4D616EE4C85008BA0B7 /* SenTestingKit.framework */,
+				CBA322CF16F0EF0300C51537 /* UIKit.framework */,
+				CBA322D116F0EF0300C51537 /* Foundation.framework */,
+				CBA322D316F0EF0300C51537 /* CoreGraphics.framework */,
+				CBA322F616F0EF0400C51537 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB4DE4B516EE4C85008BA0B7 /* UVS */ = {
+		CBA322D516F0EF0300C51537 /* UVS */ = {
 			isa = PBXGroup;
 			children = (
-				CB4DE4F316EE600C008BA0B7 /* UVSViewVotePoll.m */,
-				CB4DE4F216EE6004008BA0B7 /* UVSViewVotePoll.h */,
-				CB4DE4BE16EE4C85008BA0B7 /* UVSAppDelegate.h */,
-				CB4DE4BF16EE4C85008BA0B7 /* UVSAppDelegate.m */,
-				CB4DE4C716EE4C85008BA0B7 /* MainStoryboard_iPhone.storyboard */,
-				CB4DE4CA16EE4C85008BA0B7 /* MainStoryboard_iPad.storyboard */,
-				CB4DE4CD16EE4C85008BA0B7 /* UVSViewController.h */,
-				CB4DE4CE16EE4C85008BA0B7 /* UVSViewController.m */,
-				CB4DE4B616EE4C85008BA0B7 /* Supporting Files */,
+				CBA322DE16F0EF0300C51537 /* UVSAppDelegate.h */,
+				CBA322DF16F0EF0400C51537 /* UVSAppDelegate.m */,
+				CBA322E716F0EF0400C51537 /* MainStoryboard_iPhone.storyboard */,
+				CBA322EA16F0EF0400C51537 /* MainStoryboard_iPad.storyboard */,
+				CBA322ED16F0EF0400C51537 /* UVSViewController.h */,
+				CBA322EE16F0EF0400C51537 /* UVSViewController.m */,
+				CBA322D616F0EF0300C51537 /* Supporting Files */,
+				CBA3230D16F0F34D00C51537 /* UVSViewVotePoll.h */,
+				CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */,
 			);
 			path = UVS;
 			sourceTree = "<group>";
 		};
-		CB4DE4B616EE4C85008BA0B7 /* Supporting Files */ = {
+		CBA322D616F0EF0300C51537 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CB4DE4B716EE4C85008BA0B7 /* UVS-Info.plist */,
-				CB4DE4B816EE4C85008BA0B7 /* InfoPlist.strings */,
-				CB4DE4BB16EE4C85008BA0B7 /* main.m */,
-				CB4DE4BD16EE4C85008BA0B7 /* UVS-Prefix.pch */,
-				CB4DE4C116EE4C85008BA0B7 /* Default.png */,
-				CB4DE4C316EE4C85008BA0B7 /* Default@2x.png */,
-				CB4DE4C516EE4C85008BA0B7 /* Default-568h@2x.png */,
+				CBA322D716F0EF0300C51537 /* UVS-Info.plist */,
+				CBA322D816F0EF0300C51537 /* InfoPlist.strings */,
+				CBA322DB16F0EF0300C51537 /* main.m */,
+				CBA322DD16F0EF0300C51537 /* UVS-Prefix.pch */,
+				CBA322E116F0EF0400C51537 /* Default.png */,
+				CBA322E316F0EF0400C51537 /* Default@2x.png */,
+				CBA322E516F0EF0400C51537 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CB4DE4DC16EE4C85008BA0B7 /* UVSTests */ = {
+		CBA322FC16F0EF0400C51537 /* UVSTests */ = {
 			isa = PBXGroup;
 			children = (
-				CB4DE4E216EE4C86008BA0B7 /* UVSTests.h */,
-				CB4DE4E316EE4C86008BA0B7 /* UVSTests.m */,
-				CB4DE4DD16EE4C86008BA0B7 /* Supporting Files */,
+				CBA3230216F0EF0400C51537 /* UVSTests.h */,
+				CBA3230316F0EF0400C51537 /* UVSTests.m */,
+				CBA322FD16F0EF0400C51537 /* Supporting Files */,
 			);
 			path = UVSTests;
 			sourceTree = "<group>";
 		};
-		CB4DE4DD16EE4C86008BA0B7 /* Supporting Files */ = {
+		CBA322FD16F0EF0400C51537 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CB4DE4DE16EE4C86008BA0B7 /* UVSTests-Info.plist */,
-				CB4DE4DF16EE4C86008BA0B7 /* InfoPlist.strings */,
+				CBA322FE16F0EF0400C51537 /* UVSTests-Info.plist */,
+				CBA322FF16F0EF0400C51537 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -171,13 +171,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB4DE4AB16EE4C85008BA0B7 /* UVS */ = {
+		CBA322CB16F0EF0300C51537 /* UVS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB4DE4E716EE4C86008BA0B7 /* Build configuration list for PBXNativeTarget "UVS" */;
+			buildConfigurationList = CBA3230716F0EF0400C51537 /* Build configuration list for PBXNativeTarget "UVS" */;
 			buildPhases = (
-				CB4DE4A816EE4C85008BA0B7 /* Sources */,
-				CB4DE4A916EE4C85008BA0B7 /* Frameworks */,
-				CB4DE4AA16EE4C85008BA0B7 /* Resources */,
+				CBA322C816F0EF0300C51537 /* Sources */,
+				CBA322C916F0EF0300C51537 /* Frameworks */,
+				CBA322CA16F0EF0300C51537 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -185,82 +185,82 @@
 			);
 			name = UVS;
 			productName = UVS;
-			productReference = CB4DE4AC16EE4C85008BA0B7 /* UVS.app */;
+			productReference = CBA322CC16F0EF0300C51537 /* UVS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CB4DE4D416EE4C85008BA0B7 /* UVSTests */ = {
+		CBA322F416F0EF0400C51537 /* UVSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB4DE4EA16EE4C86008BA0B7 /* Build configuration list for PBXNativeTarget "UVSTests" */;
+			buildConfigurationList = CBA3230A16F0EF0400C51537 /* Build configuration list for PBXNativeTarget "UVSTests" */;
 			buildPhases = (
-				CB4DE4D016EE4C85008BA0B7 /* Sources */,
-				CB4DE4D116EE4C85008BA0B7 /* Frameworks */,
-				CB4DE4D216EE4C85008BA0B7 /* Resources */,
-				CB4DE4D316EE4C85008BA0B7 /* ShellScript */,
+				CBA322F016F0EF0400C51537 /* Sources */,
+				CBA322F116F0EF0400C51537 /* Frameworks */,
+				CBA322F216F0EF0400C51537 /* Resources */,
+				CBA322F316F0EF0400C51537 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CB4DE4DB16EE4C85008BA0B7 /* PBXTargetDependency */,
+				CBA322FB16F0EF0400C51537 /* PBXTargetDependency */,
 			);
 			name = UVSTests;
 			productName = UVSTests;
-			productReference = CB4DE4D516EE4C85008BA0B7 /* UVSTests.octest */;
+			productReference = CBA322F516F0EF0400C51537 /* UVSTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CB4DE4A416EE4C85008BA0B7 /* Project object */ = {
+		CBA322C416F0EF0300C51537 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = UVS;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Richard Bruneau";
 			};
-			buildConfigurationList = CB4DE4A716EE4C85008BA0B7 /* Build configuration list for PBXProject "UVS" */;
+			buildConfigurationList = CBA322C716F0EF0300C51537 /* Build configuration list for PBXProject "UVS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CB4DE4A316EE4C84008BA0B7;
-			productRefGroup = CB4DE4AD16EE4C85008BA0B7 /* Products */;
+			mainGroup = CBA322C316F0EF0300C51537;
+			productRefGroup = CBA322CD16F0EF0300C51537 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB4DE4AB16EE4C85008BA0B7 /* UVS */,
-				CB4DE4D416EE4C85008BA0B7 /* UVSTests */,
+				CBA322CB16F0EF0300C51537 /* UVS */,
+				CBA322F416F0EF0400C51537 /* UVSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CB4DE4AA16EE4C85008BA0B7 /* Resources */ = {
+		CBA322CA16F0EF0300C51537 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4DE4BA16EE4C85008BA0B7 /* InfoPlist.strings in Resources */,
-				CB4DE4C216EE4C85008BA0B7 /* Default.png in Resources */,
-				CB4DE4C416EE4C85008BA0B7 /* Default@2x.png in Resources */,
-				CB4DE4C616EE4C85008BA0B7 /* Default-568h@2x.png in Resources */,
-				CB4DE4C916EE4C85008BA0B7 /* MainStoryboard_iPhone.storyboard in Resources */,
-				CB4DE4CC16EE4C85008BA0B7 /* MainStoryboard_iPad.storyboard in Resources */,
+				CBA322DA16F0EF0300C51537 /* InfoPlist.strings in Resources */,
+				CBA322E216F0EF0400C51537 /* Default.png in Resources */,
+				CBA322E416F0EF0400C51537 /* Default@2x.png in Resources */,
+				CBA322E616F0EF0400C51537 /* Default-568h@2x.png in Resources */,
+				CBA322E916F0EF0400C51537 /* MainStoryboard_iPhone.storyboard in Resources */,
+				CBA322EC16F0EF0400C51537 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB4DE4D216EE4C85008BA0B7 /* Resources */ = {
+		CBA322F216F0EF0400C51537 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4DE4E116EE4C86008BA0B7 /* InfoPlist.strings in Resources */,
+				CBA3230116F0EF0400C51537 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CB4DE4D316EE4C85008BA0B7 /* ShellScript */ = {
+		CBA322F316F0EF0400C51537 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,64 +276,64 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CB4DE4A816EE4C85008BA0B7 /* Sources */ = {
+		CBA322C816F0EF0300C51537 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4DE4BC16EE4C85008BA0B7 /* main.m in Sources */,
-				CB4DE4C016EE4C85008BA0B7 /* UVSAppDelegate.m in Sources */,
-				CB4DE4CF16EE4C85008BA0B7 /* UVSViewController.m in Sources */,
-				CB4DE4F416EE600C008BA0B7 /* UVSViewVotePoll.m in Sources */,
+				CBA322DC16F0EF0300C51537 /* main.m in Sources */,
+				CBA322E016F0EF0400C51537 /* UVSAppDelegate.m in Sources */,
+				CBA322EF16F0EF0400C51537 /* UVSViewController.m in Sources */,
+				CBA3230F16F0F34D00C51537 /* UVSViewVotePoll.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB4DE4D016EE4C85008BA0B7 /* Sources */ = {
+		CBA322F016F0EF0400C51537 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4DE4E416EE4C86008BA0B7 /* UVSTests.m in Sources */,
+				CBA3230416F0EF0400C51537 /* UVSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CB4DE4DB16EE4C85008BA0B7 /* PBXTargetDependency */ = {
+		CBA322FB16F0EF0400C51537 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB4DE4AB16EE4C85008BA0B7 /* UVS */;
-			targetProxy = CB4DE4DA16EE4C85008BA0B7 /* PBXContainerItemProxy */;
+			target = CBA322CB16F0EF0300C51537 /* UVS */;
+			targetProxy = CBA322FA16F0EF0400C51537 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CB4DE4B816EE4C85008BA0B7 /* InfoPlist.strings */ = {
+		CBA322D816F0EF0300C51537 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB4DE4B916EE4C85008BA0B7 /* en */,
+				CBA322D916F0EF0300C51537 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		CB4DE4C716EE4C85008BA0B7 /* MainStoryboard_iPhone.storyboard */ = {
+		CBA322E716F0EF0400C51537 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB4DE4C816EE4C85008BA0B7 /* en */,
+				CBA322E816F0EF0400C51537 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		CB4DE4CA16EE4C85008BA0B7 /* MainStoryboard_iPad.storyboard */ = {
+		CBA322EA16F0EF0400C51537 /* MainStoryboard_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB4DE4CB16EE4C85008BA0B7 /* en */,
+				CBA322EB16F0EF0400C51537 /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		CB4DE4DF16EE4C86008BA0B7 /* InfoPlist.strings */ = {
+		CBA322FF16F0EF0400C51537 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB4DE4E016EE4C86008BA0B7 /* en */,
+				CBA3230016F0EF0400C51537 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -341,7 +341,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CB4DE4E516EE4C86008BA0B7 /* Debug */ = {
+		CBA3230516F0EF0400C51537 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -373,7 +373,7 @@
 			};
 			name = Debug;
 		};
-		CB4DE4E616EE4C86008BA0B7 /* Release */ = {
+		CBA3230616F0EF0400C51537 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -399,7 +399,7 @@
 			};
 			name = Release;
 		};
-		CB4DE4E816EE4C86008BA0B7 /* Debug */ = {
+		CBA3230816F0EF0400C51537 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -410,7 +410,7 @@
 			};
 			name = Debug;
 		};
-		CB4DE4E916EE4C86008BA0B7 /* Release */ = {
+		CBA3230916F0EF0400C51537 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -421,7 +421,7 @@
 			};
 			name = Release;
 		};
-		CB4DE4EB16EE4C86008BA0B7 /* Debug */ = {
+		CBA3230B16F0EF0400C51537 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UVS.app/UVS";
@@ -438,7 +438,7 @@
 			};
 			name = Debug;
 		};
-		CB4DE4EC16EE4C86008BA0B7 /* Release */ = {
+		CBA3230C16F0EF0400C51537 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UVS.app/UVS";
@@ -458,34 +458,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB4DE4A716EE4C85008BA0B7 /* Build configuration list for PBXProject "UVS" */ = {
+		CBA322C716F0EF0300C51537 /* Build configuration list for PBXProject "UVS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB4DE4E516EE4C86008BA0B7 /* Debug */,
-				CB4DE4E616EE4C86008BA0B7 /* Release */,
+				CBA3230516F0EF0400C51537 /* Debug */,
+				CBA3230616F0EF0400C51537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB4DE4E716EE4C86008BA0B7 /* Build configuration list for PBXNativeTarget "UVS" */ = {
+		CBA3230716F0EF0400C51537 /* Build configuration list for PBXNativeTarget "UVS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB4DE4E816EE4C86008BA0B7 /* Debug */,
-				CB4DE4E916EE4C86008BA0B7 /* Release */,
+				CBA3230816F0EF0400C51537 /* Debug */,
+				CBA3230916F0EF0400C51537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		CB4DE4EA16EE4C86008BA0B7 /* Build configuration list for PBXNativeTarget "UVSTests" */ = {
+		CBA3230A16F0EF0400C51537 /* Build configuration list for PBXNativeTarget "UVSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB4DE4EB16EE4C86008BA0B7 /* Debug */,
-				CB4DE4EC16EE4C86008BA0B7 /* Release */,
+				CBA3230B16F0EF0400C51537 /* Debug */,
+				CBA3230C16F0EF0400C51537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CB4DE4A416EE4C85008BA0B7 /* Project object */;
+	rootObject = CBA322C416F0EF0300C51537 /* Project object */;
 }

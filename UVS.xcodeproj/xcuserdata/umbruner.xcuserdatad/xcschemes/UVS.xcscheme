@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB4DE4AB16EE4C85008BA0B7"
+               BlueprintIdentifier = "CBA322CB16F0EF0300C51537"
                BuildableName = "UVS.app"
                BlueprintName = "UVS"
                ReferencedContainer = "container:UVS.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB4DE4D416EE4C85008BA0B7"
+               BlueprintIdentifier = "CBA322F416F0EF0400C51537"
                BuildableName = "UVSTests.octest"
                BlueprintName = "UVSTests"
                ReferencedContainer = "container:UVS.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CB4DE4AB16EE4C85008BA0B7"
+            BlueprintIdentifier = "CBA322CB16F0EF0300C51537"
             BuildableName = "UVS.app"
             BlueprintName = "UVS"
             ReferencedContainer = "container:UVS.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CB4DE4AB16EE4C85008BA0B7"
+            BlueprintIdentifier = "CBA322CB16F0EF0300C51537"
             BuildableName = "UVS.app"
             BlueprintName = "UVS"
             ReferencedContainer = "container:UVS.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CB4DE4AB16EE4C85008BA0B7"
+            BlueprintIdentifier = "CBA322CB16F0EF0300C51537"
             BuildableName = "UVS.app"
             BlueprintName = "UVS"
             ReferencedContainer = "container:UVS.xcodeproj">
