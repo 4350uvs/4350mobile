@@ -34,6 +34,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    
     [[self pollTable]setDelegate:self];
     [[self pollTable]setDataSource:self];
     array = [[NSMutableArray alloc]init];
@@ -55,6 +56,7 @@
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     NSLog(@"Communication with the app server failed. Please check your Internet connection.");
+    //TODO notice to user
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
@@ -70,8 +72,7 @@
     [[self pollTable]reloadData];
 }
 
--(void)loadTable
-{
+-(void)loadTable{
     
     [array removeAllObjects];
     

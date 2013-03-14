@@ -25,6 +25,7 @@
 		CBA3230116F0EF0400C51537 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBA322FF16F0EF0400C51537 /* InfoPlist.strings */; };
 		CBA3230416F0EF0400C51537 /* UVSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3230316F0EF0400C51537 /* UVSTests.m */; };
 		CBA3230F16F0F34D00C51537 /* UVSViewVotePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */; };
+		CBCC329016F2467C00D00A03 /* UVSViewCreatePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCC328F16F2467C00D00A03 /* UVSViewCreatePoll.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		CBA3230316F0EF0400C51537 /* UVSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSTests.m; sourceTree = "<group>"; };
 		CBA3230D16F0F34D00C51537 /* UVSViewVotePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSViewVotePoll.h; sourceTree = "<group>"; };
 		CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewVotePoll.m; sourceTree = "<group>"; };
+		CBCC328E16F2467C00D00A03 /* UVSViewCreatePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSViewCreatePoll.h; sourceTree = "<group>"; };
+		CBCC328F16F2467C00D00A03 /* UVSViewCreatePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewCreatePoll.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				CBA322D616F0EF0300C51537 /* Supporting Files */,
 				CBA3230D16F0F34D00C51537 /* UVSViewVotePoll.h */,
 				CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */,
+				CBCC328E16F2467C00D00A03 /* UVSViewCreatePoll.h */,
+				CBCC328F16F2467C00D00A03 /* UVSViewCreatePoll.m */,
 			);
 			path = UVS;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 				CBA322E016F0EF0400C51537 /* UVSAppDelegate.m in Sources */,
 				CBA322EF16F0EF0400C51537 /* UVSViewController.m in Sources */,
 				CBA3230F16F0F34D00C51537 /* UVSViewVotePoll.m in Sources */,
+				CBCC329016F2467C00D00A03 /* UVSViewCreatePoll.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,10 +408,12 @@
 		CBA3230816F0EF0400C51537 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Richard Bruneau (LKNEG42C6C)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UVS/UVS-Prefix.pch";
 				INFOPLIST_FILE = "UVS/UVS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -413,10 +421,12 @@
 		CBA3230916F0EF0400C51537 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Richard Bruneau (LKNEG42C6C)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UVS/UVS-Prefix.pch";
 				INFOPLIST_FILE = "UVS/UVS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -474,6 +484,7 @@
 				CBA3230916F0EF0400C51537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBA3230A16F0EF0400C51537 /* Build configuration list for PBXNativeTarget "UVSTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +493,7 @@
 				CBA3230C16F0EF0400C51537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
