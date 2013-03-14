@@ -10,7 +10,7 @@
 
 @interface UVSViewVotePoll (){
     
-	NSMutableData *jsonData;
+    NSMutableData *jsonData;
     NSURLConnection *connection;
     NSMutableArray *array;
     
