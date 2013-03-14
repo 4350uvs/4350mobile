@@ -10,7 +10,7 @@
 
 @interface UVSViewVotePoll (){
     
-    NSMutableData *jsonData;
+	NSMutableData *jsonData;
     NSURLConnection *connection;
     NSMutableArray *array;
     
@@ -33,7 +33,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
     
     [[self pollTable]setDelegate:self];
     [[self pollTable]setDataSource:self];
@@ -71,7 +70,8 @@
     [[self pollTable]reloadData];
 }
 
--(void)loadTable{
+-(void)loadTable
+{
     
     [array removeAllObjects];
     
