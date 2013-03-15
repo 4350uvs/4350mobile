@@ -8,6 +8,8 @@
 
 #import "UVSViewCreatePoll.h"
 
+static int numSelected = 2;
+
 @interface UVSViewCreatePoll ()
 
 @end
@@ -50,37 +52,53 @@
     
     //disable fields based on segment index
     if ( selectedIndex == 0){
-        //NSLog(@"Seg pressed %d", selectedIndex);
+        NSLog(@"Seg pressed %d", selectedIndex);
+        
+        numSelected = 2;
         
         [self.pollChoice3 setEnabled:NO];
         
         [self.pollChoice4 setEnabled:NO];
         
         [self.pollChoice5 setEnabled:NO];
+        
+        NSLog(@"Selected %d", numSelected);
     }else if( selectedIndex == 1){
-        //NSLog(@"Seg pressed %d", selectedIndex);
+        NSLog(@"Seg pressed %d", selectedIndex);
+        
+        numSelected = 3;
         
         [self.pollChoice3 setEnabled:YES];
         
         [self.pollChoice4 setEnabled:NO];
         
         [self.pollChoice5 setEnabled:NO];
+        
+        NSLog(@"Selected %d", numSelected);
     }else if( selectedIndex == 2){
-        //NSLog(@"Seg pressed %d", selectedIndex);
+        NSLog(@"Seg pressed %d", selectedIndex);
+        
+        numSelected = 4;
         
         [self.pollChoice3 setEnabled:YES];
         
         [self.pollChoice4 setEnabled:YES];
         
         [self.pollChoice5 setEnabled:NO];
+        
+        NSLog(@"Selected %d", numSelected);
     }else if( selectedIndex == 3){
-        //NSLog(@"Seg pressed %d", selectedIndex);
+        NSLog(@"Seg pressed %d", selectedIndex);
+        
+        numSelected = 5;
         
         [self.pollChoice3 setEnabled:YES];
         
         [self.pollChoice4 setEnabled:YES];
         
         [self.pollChoice5 setEnabled:YES];
+        
+        NSLog(@"Selected %d", numSelected);
     }
         
 }
@@ -130,6 +148,5 @@
     
     return retStr;
 }
-
 
 @end
