@@ -87,33 +87,49 @@
 
 - (IBAction)submitPoll:(id)sender {
     
-    //http://ec2-54-235-121-23.compute-1.amazonaws.com:8274/polls
-    //@"http://postcatcher.in/catchers/514240ccdbb8050200000268"]
     NSString *urlStr = [NSString stringWithFormat:@"http://ec2-54-235-121-23.compute-1.amazonaws.com:8274/polls"];
+    //NSString *urlStr = [NSString stringWithFormat:@"https://posttestserver.com/post.php"];
     NSURL *url = [NSURL URLWithString:urlStr];
-    
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
-    //title + 5 choices
-    //@"[{'title': '%@', 'choice': '%@', 'choice': '%@', 'choice': '%@', 'choice': '%@', 'choice': '%@'}]"
-    //@"title=%@&choice=%@&choice=%@&choice=%@&choice=%@&choice=%@"
+    //title + choices as parameters to api - :8274/polls
+    NSString *dataStr = [self getChoices];
     
-    NSString *dataStr = [NSString stringWithFormat:@"title=%@&choice=%@&choice=%@&choice=%@&choice=%@&choice=%@", self.pollTitle.text, self.pollChoice1.text, self.pollChoice2.text, self.pollChoice3.text, self.pollChoice4.text, self.pollChoice5.text];
-    
-    //NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    
+    //all other HTTP values set automatically
     [request setHTTPMethod:@"POST"];
-    [request setHTTPBody:[dataStr dataUsingEncoding:NSUTF8StringEncoding]];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:[dataStr dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES]];
+    
+    //response will contain poll id, otherwise error
+    NSURLResponse *response;
+    NSError *err;
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
+    NSLog(@"Error(s): %@", err);
     
     
-    //NSURLResponse *response;
-    //NSError *err;
-    //NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
-    //NSLog(@"Error(s): %@", err);
     
+    NSLog(@"RESPONSE: %@", responseData);
+
     
     NSLog(@"Form values: %@ %@ %@ %@ %@ %@ %@ %@", self.pollTitle.text, self.pollCreator.text, self.pollQuestion.text, self.pollChoice1.text, self.pollChoice2.text, self.pollChoice3.text, self.pollChoice4.text, self.pollChoice5.text );
     
 }
+
+-(NSString*)getChoices{
+    
+    //creates output for 2
+    NSString *retStr = [NSString stringWithFormat:@"title=%@&choice=%@&choice=%@", self.pollTitle.text, self.pollChoice1.text, self.pollChoice2.text];
+    
+    if( numSelected == 3){
+        retStr = [retStr stringByAppendingString:[NSString stringWithFormat:@"&choice=%@", self.pollChoice3.text]];
+    }else if ( numSelected == 4){
+        retStr = [retStr stringByAppendingString:[NSString stringWithFormat:@"&choice=%@", self.pollChoice4.text]];
+    }else if ( numSelected == 5){
+        retStr = [retStr stringByAppendingString:[NSString stringWithFormat:@"&choice=%@", self.pollChoice5.text]];
+    }
+    
+    return retStr;
+}
+
 
 @end
