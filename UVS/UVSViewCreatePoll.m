@@ -8,6 +8,8 @@
 
 #import "UVSViewCreatePoll.h"
 
+//Supposed to be the default for UISegmentControl
+//but I don't trust it... therefore, set here
 static int numSelected = 2;
 
 @interface UVSViewCreatePoll ()
@@ -45,6 +47,7 @@ static int numSelected = 2;
 }
 
 -(IBAction) choiceSegment:(id)sender{
+    
     NSLog(@"Segment action",nil);
     
     UISegmentedControl *segControl = sender;
@@ -52,6 +55,7 @@ static int numSelected = 2;
     
     //disable fields based on segment index
     if ( selectedIndex == 0){
+        
         NSLog(@"Seg pressed %d", selectedIndex);
         
         numSelected = 2;
@@ -63,7 +67,9 @@ static int numSelected = 2;
         [self.pollChoice5 setEnabled:NO];
         
         NSLog(@"Selected %d", numSelected);
+        
     }else if( selectedIndex == 1){
+        
         NSLog(@"Seg pressed %d", selectedIndex);
         
         numSelected = 3;
@@ -75,7 +81,9 @@ static int numSelected = 2;
         [self.pollChoice5 setEnabled:NO];
         
         NSLog(@"Selected %d", numSelected);
+        
     }else if( selectedIndex == 2){
+        
         NSLog(@"Seg pressed %d", selectedIndex);
         
         numSelected = 4;
@@ -87,7 +95,9 @@ static int numSelected = 2;
         [self.pollChoice5 setEnabled:NO];
         
         NSLog(@"Selected %d", numSelected);
+        
     }else if( selectedIndex == 3){
+        
         NSLog(@"Seg pressed %d", selectedIndex);
         
         numSelected = 5;
@@ -122,18 +132,30 @@ static int numSelected = 2;
     NSURLResponse *response;
     NSError *err;
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
+    
+    
+    if (err == nil){
+        
+        self.msgBox.text = @"Poll creation successful";
+        
+    }else{
+        
+        self.msgBox.text = @"Error";
+        
+    }
+    
+    
+    //Error and test output
+    
     NSLog(@"Error(s): %@", err);
     
-    
-    
     NSLog(@"RESPONSE: %@", responseData);
-    
     
     NSLog(@"Form values: %@ %@ %@ %@ %@ %@ %@ %@", self.pollTitle.text, self.pollCreator.text, self.pollQuestion.text, self.pollChoice1.text, self.pollChoice2.text, self.pollChoice3.text, self.pollChoice4.text, self.pollChoice5.text );
     
 }
 
--(NSString*)getChoices{
+- (NSString*)getChoices{
     
     //creates output for 2
     NSString *retStr = [NSString stringWithFormat:@"title=%@&choice=%@&choice=%@", self.pollTitle.text, self.pollChoice1.text, self.pollChoice2.text];

@@ -133,10 +133,12 @@
         NSIndexPath *index = [self.pollTable indexPathForSelectedRow];
         UVSViewPollDetail *pollDetailController = segue.destinationViewController;
         NSUInteger currRow = index.row;
-        pollDetailController.pollNum = (int) [pollIDArr objectAtIndex:currRow];
-        //[array objectAtIndex:currRow];
+
+        pollDetailController.pollNum = [[pollIDArr objectAtIndex:currRow]integerValue];
+
+        NSLog(@"pid: %d", [[pollIDArr objectAtIndex:currRow] integerValue]);
         
-        //pollDetailController.pollName = [array objectAtIndex:currRow];
+        pollDetailController.pollName = [array objectAtIndex:currRow];
         //[pollIDArr objectAtIndex:currRow];
     }
 }

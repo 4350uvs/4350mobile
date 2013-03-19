@@ -10,7 +10,8 @@
 
 @interface UVSViewPollDetail : UIViewController
 
-@property (nonatomic) int pollNum;
+
+@property (nonatomic) NSUInteger pollNum;
 @property (nonatomic) NSString *pollName;
 @property (strong, nonatomic) IBOutlet UITextView *pollDetailText;
 @property (strong, nonatomic) IBOutlet UILabel *pollTitleLabel;
