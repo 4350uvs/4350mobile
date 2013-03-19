@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB84FF5616F3AA00008F7AE7 /* UVSViewPollDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = CB84FF5516F3AA00008F7AE7 /* UVSViewPollDetail.m */; };
 		CBA322D016F0EF0300C51537 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322CF16F0EF0300C51537 /* UIKit.framework */; };
 		CBA322D216F0EF0300C51537 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322D116F0EF0300C51537 /* Foundation.framework */; };
 		CBA322D416F0EF0300C51537 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322D316F0EF0300C51537 /* CoreGraphics.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB84FF5416F3AA00008F7AE7 /* UVSViewPollDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSViewPollDetail.h; sourceTree = "<group>"; };
+		CB84FF5516F3AA00008F7AE7 /* UVSViewPollDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewPollDetail.m; sourceTree = "<group>"; };
 		CBA322CC16F0EF0300C51537 /* UVS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UVS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA322CF16F0EF0300C51537 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CBA322D116F0EF0300C51537 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -136,6 +139,8 @@
 				CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */,
 				CBCC328E16F2467C00D00A03 /* UVSViewCreatePoll.h */,
 				CBCC328F16F2467C00D00A03 /* UVSViewCreatePoll.m */,
+				CB84FF5416F3AA00008F7AE7 /* UVSViewPollDetail.h */,
+				CB84FF5516F3AA00008F7AE7 /* UVSViewPollDetail.m */,
 			);
 			path = UVS;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				CBA322EF16F0EF0400C51537 /* UVSViewController.m in Sources */,
 				CBA3230F16F0F34D00C51537 /* UVSViewVotePoll.m in Sources */,
 				CBCC329016F2467C00D00A03 /* UVSViewCreatePoll.m in Sources */,
+				CB84FF5616F3AA00008F7AE7 /* UVSViewPollDetail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

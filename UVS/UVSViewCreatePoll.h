@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *pollQuestion;
 
 - (IBAction)choiceSegment:(id)sender;
+
 @property (strong, nonatomic) IBOutlet UISegmentedControl *choiceSeg;
 
 @property (strong, nonatomic) IBOutlet UITextField *pollChoice1;

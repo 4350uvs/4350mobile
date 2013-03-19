@@ -9,10 +9,14 @@
 #import "UVSViewPollDetail.h"
 
 @interface UVSViewPollDetail ()
-
 @end
 
 @implementation UVSViewPollDetail
+
+@synthesize pollDetailText;
+@synthesize pollNum;
+@synthesize pollTitleLabel;
+@synthesize pollName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +31,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    pollDetailText.text = [NSString stringWithFormat:@"%d", (int) self.pollNum];
+    pollTitleLabel.text = self.pollName;
+    
 }
 
 - (void)didReceiveMemoryWarning

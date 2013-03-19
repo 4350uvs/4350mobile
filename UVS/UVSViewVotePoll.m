@@ -7,12 +7,14 @@
 //
 
 #import "UVSViewVotePoll.h"
+#import "UVSViewPollDetail.h"
 
 @interface UVSViewVotePoll (){
     
     NSMutableData *jsonData;
     NSURLConnection *connection;
     NSMutableArray *array;
+    NSMutableArray *pollIDArr;
     
 }
 @end
@@ -37,7 +39,8 @@
     
     [[self pollTable]setDelegate:self];
     [[self pollTable]setDataSource:self];
-    array = [[NSMutableArray alloc]init];
+    array = [[NSMutableArray alloc] init];
+    pollIDArr = [[NSMutableArray alloc] init];
     
     [self loadTable];
     
@@ -66,8 +69,10 @@
     
     for (NSDictionary *dict in polls) {
         NSString *pollTitle = [dict objectForKey:@"title"];
+        NSInteger pollID = [[dict objectForKey:@"id"] intValue];
         
         [array addObject:pollTitle];
+        [pollIDArr addObject: [NSNumber numberWithInteger:pollID]];
     }
     [[self pollTable]reloadData];
 }
@@ -118,6 +123,22 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"PollDetailSegue"])
+    {
+        NSIndexPath *index = [self.pollTable indexPathForSelectedRow];
+        UVSViewPollDetail *pollDetailController = segue.destinationViewController;
+        NSUInteger currRow = index.row;
+        pollDetailController.pollNum = (int) [pollIDArr objectAtIndex:currRow];
+        //[array objectAtIndex:currRow];
+        
+        //pollDetailController.pollName = [array objectAtIndex:currRow];
+        //[pollIDArr objectAtIndex:currRow];
+    }
 }
 
 @end

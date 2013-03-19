@@ -127,7 +127,7 @@ static int numSelected = 2;
     
     
     NSLog(@"RESPONSE: %@", responseData);
-
+    
     
     NSLog(@"Form values: %@ %@ %@ %@ %@ %@ %@ %@", self.pollTitle.text, self.pollCreator.text, self.pollQuestion.text, self.pollChoice1.text, self.pollChoice2.text, self.pollChoice3.text, self.pollChoice4.text, self.pollChoice5.text );
     
@@ -138,11 +138,15 @@ static int numSelected = 2;
     //creates output for 2
     NSString *retStr = [NSString stringWithFormat:@"title=%@&choice=%@&choice=%@", self.pollTitle.text, self.pollChoice1.text, self.pollChoice2.text];
     
-    if( numSelected == 3){
+    if( numSelected >= 3){
         retStr = [retStr stringByAppendingString:[NSString stringWithFormat:@"&choice=%@", self.pollChoice3.text]];
-    }else if ( numSelected == 4){
+    }
+    
+    if ( numSelected >= 4){
         retStr = [retStr stringByAppendingString:[NSString stringWithFormat:@"&choice=%@", self.pollChoice4.text]];
-    }else if ( numSelected == 5){
+    }
+    
+    if ( numSelected >= 5){
         retStr = [retStr stringByAppendingString:[NSString stringWithFormat:@"&choice=%@", self.pollChoice5.text]];
     }
     
