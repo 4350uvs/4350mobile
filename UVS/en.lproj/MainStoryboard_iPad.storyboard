@@ -234,8 +234,8 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="-" translatesAutoresizingMaskIntoConstraints="NO" id="NNW-ts-0Ho">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="244" id="Afa-1b-6Qd"/>
-                                    <constraint firstAttribute="width" constant="346" id="Axj-cj-tFL"/>
+                                    <constraint firstAttribute="height" constant="35" id="E6G-sE-YxX"/>
+                                    <constraint firstAttribute="width" constant="590" id="jIH-Kc-9FO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -255,7 +255,7 @@
                             <constraint firstItem="Qre-xG-mTA" firstAttribute="top" secondItem="RqZ-Jm-qxt" secondAttribute="top" constant="20" symbolic="YES" type="default" id="38B-yb-FsR"/>
                             <constraint firstItem="Qre-xG-mTA" firstAttribute="leading" secondItem="RqZ-Jm-qxt" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="HUV-ja-H7R"/>
                             <constraint firstItem="NNW-ts-0Ho" firstAttribute="top" secondItem="RqZ-Jm-qxt" secondAttribute="top" constant="105" id="L4F-bo-wH8"/>
-                            <constraint firstItem="NNW-ts-0Ho" firstAttribute="leading" secondItem="RqZ-Jm-qxt" secondAttribute="leading" constant="89" id="t5Z-Ay-d96"/>
+                            <constraint firstItem="NNW-ts-0Ho" firstAttribute="centerX" secondItem="RqZ-Jm-qxt" secondAttribute="centerX" type="default" id="LwY-mp-1on"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aOH-rZ-PPq"/>
@@ -626,45 +626,6 @@
             <point key="canvasLocation" x="-378" y="-280"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UVSViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UVSViewController.h"/>
-        </class>
-        <class className="UVSViewCreatePoll" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UVSViewCreatePoll.h"/>
-            <relationships>
-                <relationship kind="action" name="choiceSegment:"/>
-                <relationship kind="action" name="submitPoll:"/>
-                <relationship kind="outlet" name="choiceSeg" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="msgBox" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="pollChoice1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pollChoice2" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pollChoice3" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pollChoice4" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pollChoice5" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pollCreator" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pollQuestion" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pollSubmit" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="pollTitle" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="UVSViewPollDetail" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UVSViewPollDetail.h"/>
-            <relationships>
-                <relationship kind="outlet" name="pollDetailText" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="pollTitleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="UVSViewVotePoll" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UVSViewVotePoll.h"/>
-            <relationships>
-                <relationship kind="outlet" name="pollTable" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

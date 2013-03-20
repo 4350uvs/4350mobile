@@ -136,11 +136,11 @@ static int numSelected = 2;
     
     if (err == nil){
         
-        self.msgBox.text = @"Poll creation successful";
+        self.msgBox.text = @"Poll creation successful.";
         
     }else{
         
-        self.msgBox.text = @"Error";
+        self.msgBox.text = @"Error. No one will ever see your poll now...";
         
     }
     

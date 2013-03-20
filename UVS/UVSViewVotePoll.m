@@ -139,7 +139,6 @@
         NSLog(@"pid: %d", [[pollIDArr objectAtIndex:currRow] integerValue]);
         
         pollDetailController.pollName = [array objectAtIndex:currRow];
-        //[pollIDArr objectAtIndex:currRow];
     }
 }
 
