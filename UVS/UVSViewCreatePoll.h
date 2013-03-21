@@ -16,13 +16,9 @@
 @property (strong, nonatomic) IBOutlet UISegmentedControl *choiceSeg;
 
 @property (strong, nonatomic) IBOutlet UITextField *pollChoice1;
-
 @property (strong, nonatomic) IBOutlet UITextField *pollChoice2;
-
 @property (strong, nonatomic) IBOutlet UITextField *pollChoice3;
-
 @property (strong, nonatomic) IBOutlet UITextField *pollChoice4;
-
 @property (strong, nonatomic) IBOutlet UITextField *pollChoice5;
 
 @property (strong, nonatomic) IBOutlet UIButton *pollSubmit;

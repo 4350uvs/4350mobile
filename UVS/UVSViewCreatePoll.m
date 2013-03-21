@@ -11,6 +11,10 @@ static int numSelected = 2;
 
 @interface UVSViewCreatePoll ()
 
+@property NSMutableArray *pollChoices;
+
+- (void)disableChoiceFieldsBasedOnUserChoice:(int)numSelected;
+
 @end
 
 @implementation UVSViewCreatePoll
@@ -29,11 +33,9 @@ static int numSelected = 2;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self.pollChoice3 setEnabled:NO];
+    self.pollChoices = [[NSMutableArray alloc]initWithObjects: self.pollChoice1, self.pollChoice2, self.pollChoice3, self.pollChoice4, self.pollChoice5, nil];
     
-    [self.pollChoice4 setEnabled:NO];
-    
-    [self.pollChoice5 setEnabled:NO];
+    [self disableChoiceFieldsBasedOnUserChoice:numSelected];
     
 }
 
@@ -51,63 +53,25 @@ static int numSelected = 2;
     int selectedIndex = [segControl selectedSegmentIndex];
     
     //disable fields based on segment index
-    if ( selectedIndex == 0){
+    NSLog(@"Seg pressed %d", selectedIndex);
+    numSelected = selectedIndex + 2;
+    [self disableChoiceFieldsBasedOnUserChoice:numSelected];
+    NSLog(@"Selected %d", numSelected);
+}
+
+- (void)disableChoiceFieldsBasedOnUserChoice:(int)numSelected {
+
+    for (int i = 0; i < [self.pollChoices count]; i++) {
         
-        NSLog(@"Seg pressed %d", selectedIndex);
+        UITextField *field = [self.pollChoices objectAtIndex:i];
         
-        numSelected = 2;
-        
-        [self.pollChoice3 setEnabled:NO];
-        
-        [self.pollChoice4 setEnabled:NO];
-        
-        [self.pollChoice5 setEnabled:NO];
-        
-        NSLog(@"Selected %d", numSelected);
-        
-    }else if( selectedIndex == 1){
-        
-        NSLog(@"Seg pressed %d", selectedIndex);
-        
-        numSelected = 3;
-        
-        [self.pollChoice3 setEnabled:YES];
-        
-        [self.pollChoice4 setEnabled:NO];
-        
-        [self.pollChoice5 setEnabled:NO];
-        
-        NSLog(@"Selected %d", numSelected);
-        
-    }else if( selectedIndex == 2){
-        
-        NSLog(@"Seg pressed %d", selectedIndex);
-        
-        numSelected = 4;
-        
-        [self.pollChoice3 setEnabled:YES];
-        
-        [self.pollChoice4 setEnabled:YES];
-        
-        [self.pollChoice5 setEnabled:NO];
-        
-        NSLog(@"Selected %d", numSelected);
-        
-    }else if( selectedIndex == 3){
-        
-        NSLog(@"Seg pressed %d", selectedIndex);
-        
-        numSelected = 5;
-        
-        [self.pollChoice3 setEnabled:YES];
-        
-        [self.pollChoice4 setEnabled:YES];
-        
-        [self.pollChoice5 setEnabled:YES];
-        
-        NSLog(@"Selected %d", numSelected);
+        if (i < numSelected) {
+            [field setEnabled:YES];
+        }
+        else {
+            [field setEnabled:NO];
+        }
     }
-        
 }
 
 - (IBAction)submitPoll:(id)sender {
