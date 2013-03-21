@@ -225,7 +225,7 @@
 			attributes = {
 				CLASSPREFIX = UVS;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "4350uvs";
+				ORGANIZATIONNAME = "Richard Bruneau";
 			};
 			buildConfigurationList = CBA322C716F0EF0300C51537 /* Build configuration list for PBXProject "UVS" */;
 			compatibilityVersion = "Xcode 3.2";
