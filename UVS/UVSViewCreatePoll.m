@@ -60,7 +60,7 @@ static int numSelected = 2;
 }
 
 - (void)disableChoiceFieldsBasedOnUserChoice:(int)numSelected {
-
+    
     for (int i = 0; i < [self.pollChoices count]; i++) {
         
         UITextField *field = [self.pollChoices objectAtIndex:i];
