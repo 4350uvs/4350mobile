@@ -2,8 +2,11 @@
 //  UVSViewCreatePoll.m
 //  UVS
 //
+//  Copyright (c) COMP4350 - Group 3 - UVS. All rights reserved.
+//
 
 #import "UVSViewCreatePoll.h"
+#import "defines.h"
 
 //Supposed to be the default for UISegmentControl
 //but I don't trust it... therefore, set here
@@ -31,7 +34,6 @@ static int numSelected = 2;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     
     self.pollChoices = [[NSMutableArray alloc]initWithObjects: self.pollChoice1, self.pollChoice2, self.pollChoice3, self.pollChoice4, self.pollChoice5, nil];
     
@@ -42,7 +44,6 @@ static int numSelected = 2;
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(IBAction) choiceSegment:(id)sender{
@@ -76,8 +77,7 @@ static int numSelected = 2;
 
 - (IBAction)submitPoll:(id)sender {
     
-    NSString *urlStr = [NSString stringWithFormat:@"http://ec2-54-235-121-23.compute-1.amazonaws.com:8274/polls"];
-    //NSString *urlStr = [NSString stringWithFormat:@"https://posttestserver.com/post.php"];
+    NSString *urlStr = [NSString stringWithFormat:@"%@/polls", ServerURL];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
@@ -107,11 +107,8 @@ static int numSelected = 2;
     
     
     //Error and test output
-    
     NSLog(@"Error(s): %@", err);
-    
     NSLog(@"RESPONSE: %@", responseData);
-    
     NSLog(@"Form values: %@ %@ %@ %@ %@ %@ %@ %@", self.pollTitle.text, self.pollCreator.text, self.pollQuestion.text, self.pollChoice1.text, self.pollChoice2.text, self.pollChoice3.text, self.pollChoice4.text, self.pollChoice5.text );
     
 }

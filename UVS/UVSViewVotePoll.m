@@ -2,12 +2,12 @@
 //  UVSViewVotePoll.m
 //  UVS
 //
-//  Created by Richard Bruneau on 2013-03-13.
-//  Copyright (c) 2013 Richard Bruneau. All rights reserved.
+//  Copyright (c) COMP4350 - Group 3 - UVS. All rights reserved.
 //
 
 #import "UVSViewVotePoll.h"
 #import "UVSViewPollDetail.h"
+#import "defines.h"
 
 @interface UVSViewVotePoll (){
     
@@ -81,7 +81,7 @@
     
     [array removeAllObjects];
     
-    NSString *urlStr = [NSString stringWithFormat:@"http://ec2-54-235-121-23.compute-1.amazonaws.com:8274/polls"];
+    NSString *urlStr = [NSString stringWithFormat:@"%@/polls", ServerURL];
     NSURL *url = [NSURL URLWithString:urlStr];
 
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

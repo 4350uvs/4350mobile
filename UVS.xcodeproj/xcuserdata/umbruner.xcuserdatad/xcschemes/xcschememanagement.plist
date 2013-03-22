@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>UVSUnitTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>CB35199116FCE56700A996E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CBA322CB16F0EF0300C51537</key>
 		<dict>
 			<key>primary</key>

@@ -2,8 +2,7 @@
 //  UVSViewController.m
 //  UVS
 //
-//  Created by Richard Bruneau on 2013-03-13.
-//  Copyright (c) 2013 Richard Bruneau. All rights reserved.
+//  Copyright (c) COMP4350 - Group 3 - UVS. All rights reserved.
 //
 
 #import "UVSViewController.h"

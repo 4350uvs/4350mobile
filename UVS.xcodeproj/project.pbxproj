@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB35199316FCE56700A996E0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322F616F0EF0400C51537 /* SenTestingKit.framework */; };
+		CB35199416FCE56700A996E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322CF16F0EF0300C51537 /* UIKit.framework */; };
+		CB35199516FCE56700A996E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322D116F0EF0300C51537 /* Foundation.framework */; };
+		CB35199B16FCE56700A996E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB35199916FCE56700A996E0 /* InfoPlist.strings */; };
+		CB35199E16FCE56700A996E0 /* UVSUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB35199D16FCE56700A996E0 /* UVSUnitTests.m */; };
 		CB84FF5616F3AA00008F7AE7 /* UVSViewPollDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = CB84FF5516F3AA00008F7AE7 /* UVSViewPollDetail.m */; };
 		CBA322D016F0EF0300C51537 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322CF16F0EF0300C51537 /* UIKit.framework */; };
 		CBA322D216F0EF0300C51537 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA322D116F0EF0300C51537 /* Foundation.framework */; };
@@ -27,7 +32,6 @@
 		CBA3230416F0EF0400C51537 /* UVSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3230316F0EF0400C51537 /* UVSTests.m */; };
 		CBA3230F16F0F34D00C51537 /* UVSViewVotePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */; };
 		CBCC329016F2467C00D00A03 /* UVSViewCreatePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCC328F16F2467C00D00A03 /* UVSViewCreatePoll.m */; };
-		FEC085DC16FAB61A00F8F408 /* UVSCreatePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC085DB16FAB61A00F8F408 /* UVSCreatePoll.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB35199216FCE56700A996E0 /* UVSUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UVSUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB35199816FCE56700A996E0 /* UVSUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UVSUnitTests-Info.plist"; path = "../UVSUnitTests/UVSUnitTests-Info.plist"; sourceTree = "<group>"; };
+		CB35199A16FCE56700A996E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB35199C16FCE56700A996E0 /* UVSUnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UVSUnitTests.h; path = ../UVSUnitTests/UVSUnitTests.h; sourceTree = "<group>"; };
+		CB35199D16FCE56700A996E0 /* UVSUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UVSUnitTests.m; path = ../UVSUnitTests/UVSUnitTests.m; sourceTree = "<group>"; };
+		CB35199F16FCE56700A996E0 /* UVSUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UVSUnitTests-Prefix.pch"; path = "../UVSUnitTests/UVSUnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		CB84FF5416F3AA00008F7AE7 /* UVSViewPollDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSViewPollDetail.h; sourceTree = "<group>"; };
 		CB84FF5516F3AA00008F7AE7 /* UVSViewPollDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewPollDetail.m; sourceTree = "<group>"; };
+		CBA1F4B616FCBC2400E65C3E /* defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
 		CBA322CC16F0EF0300C51537 /* UVS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UVS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA322CF16F0EF0300C51537 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CBA322D116F0EF0300C51537 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,11 +81,19 @@
 		CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewVotePoll.m; sourceTree = "<group>"; };
 		CBCC328E16F2467C00D00A03 /* UVSViewCreatePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSViewCreatePoll.h; sourceTree = "<group>"; };
 		CBCC328F16F2467C00D00A03 /* UVSViewCreatePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewCreatePoll.m; sourceTree = "<group>"; };
-		FEC085DA16FAB61A00F8F408 /* UVSCreatePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSCreatePoll.h; sourceTree = "<group>"; };
-		FEC085DB16FAB61A00F8F408 /* UVSCreatePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSCreatePoll.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CB35198E16FCE56700A996E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB35199316FCE56700A996E0 /* SenTestingKit.framework in Frameworks */,
+				CB35199416FCE56700A996E0 /* UIKit.framework in Frameworks */,
+				CB35199516FCE56700A996E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBA322C916F0EF0300C51537 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -113,6 +132,7 @@
 			children = (
 				CBA322CC16F0EF0300C51537 /* UVS.app */,
 				CBA322F516F0EF0400C51537 /* UVSTests.octest */,
+				CB35199216FCE56700A996E0 /* UVSUnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +164,7 @@
 				CBCC328F16F2467C00D00A03 /* UVSViewCreatePoll.m */,
 				CB84FF5416F3AA00008F7AE7 /* UVSViewPollDetail.h */,
 				CB84FF5516F3AA00008F7AE7 /* UVSViewPollDetail.m */,
+				CBA1F4B616FCBC2400E65C3E /* defines.h */,
 			);
 			path = UVS;
 			sourceTree = "<group>";
@@ -165,11 +186,11 @@
 		CBA322FC16F0EF0400C51537 /* UVSTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB35199C16FCE56700A996E0 /* UVSUnitTests.h */,
+				CB35199D16FCE56700A996E0 /* UVSUnitTests.m */,
 				CBA3230216F0EF0400C51537 /* UVSTests.h */,
 				CBA3230316F0EF0400C51537 /* UVSTests.m */,
 				CBA322FD16F0EF0400C51537 /* Supporting Files */,
-				FEC085DA16FAB61A00F8F408 /* UVSCreatePoll.h */,
-				FEC085DB16FAB61A00F8F408 /* UVSCreatePoll.m */,
 			);
 			path = UVSTests;
 			sourceTree = "<group>";
@@ -177,6 +198,9 @@
 		CBA322FD16F0EF0400C51537 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CB35199816FCE56700A996E0 /* UVSUnitTests-Info.plist */,
+				CB35199916FCE56700A996E0 /* InfoPlist.strings */,
+				CB35199F16FCE56700A996E0 /* UVSUnitTests-Prefix.pch */,
 				CBA322FE16F0EF0400C51537 /* UVSTests-Info.plist */,
 				CBA322FF16F0EF0400C51537 /* InfoPlist.strings */,
 			);
@@ -186,6 +210,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CB35199116FCE56700A996E0 /* UVSUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3519A216FCE56700A996E0 /* Build configuration list for PBXNativeTarget "UVSUnitTests" */;
+			buildPhases = (
+				CB35198D16FCE56700A996E0 /* Sources */,
+				CB35198E16FCE56700A996E0 /* Frameworks */,
+				CB35198F16FCE56700A996E0 /* Resources */,
+				CB35199016FCE56700A996E0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UVSUnitTests;
+			productName = UVSUnitTests;
+			productReference = CB35199216FCE56700A996E0 /* UVSUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		CBA322CB16F0EF0300C51537 /* UVS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBA3230716F0EF0400C51537 /* Build configuration list for PBXNativeTarget "UVS" */;
@@ -230,7 +272,7 @@
 			attributes = {
 				CLASSPREFIX = UVS;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = 4350uvs;
+				ORGANIZATIONNAME = "Richard Bruneau";
 			};
 			buildConfigurationList = CBA322C716F0EF0300C51537 /* Build configuration list for PBXProject "UVS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -246,11 +288,20 @@
 			targets = (
 				CBA322CB16F0EF0300C51537 /* UVS */,
 				CBA322F416F0EF0400C51537 /* UVSTests */,
+				CB35199116FCE56700A996E0 /* UVSUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CB35198F16FCE56700A996E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB35199B16FCE56700A996E0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBA322CA16F0EF0300C51537 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +326,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		CB35199016FCE56700A996E0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 		CBA322F316F0EF0400C51537 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +355,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CB35198D16FCE56700A996E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB35199E16FCE56700A996E0 /* UVSUnitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBA322C816F0EF0300C51537 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,7 +381,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBA3230416F0EF0400C51537 /* UVSTests.m in Sources */,
-				FEC085DC16FAB61A00F8F408 /* UVSCreatePoll.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +395,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CB35199916FCE56700A996E0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB35199A16FCE56700A996E0 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = ../UVSUnitTests;
+			sourceTree = "<group>";
+		};
 		CBA322D816F0EF0300C51537 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -359,6 +439,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CB3519A016FCE56700A996E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UVSUnitTests/UVSUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "UVSUnitTests/UVSUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CB3519A116FCE56700A996E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UVSUnitTests/UVSUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "UVSUnitTests/UVSUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		CBA3230516F0EF0400C51537 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -480,6 +590,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CB3519A216FCE56700A996E0 /* Build configuration list for PBXNativeTarget "UVSUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3519A016FCE56700A996E0 /* Debug */,
+				CB3519A116FCE56700A996E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CBA322C716F0EF0300C51537 /* Build configuration list for PBXProject "UVS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

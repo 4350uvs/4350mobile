@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "UVS/UVSViewPollDetail.m"
-         timestampString = "385585158.744866"
+         timestampString = "385672636.978156"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "228"
-         endingLineNumber = "228"
+         startingLineNumber = "237"
+         endingLineNumber = "237"
          landmarkName = "-displayPollResults"
          landmarkType = "5">
       </FileBreakpoint>
