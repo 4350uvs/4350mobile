@@ -27,6 +27,7 @@
 		CBA3230416F0EF0400C51537 /* UVSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3230316F0EF0400C51537 /* UVSTests.m */; };
 		CBA3230F16F0F34D00C51537 /* UVSViewVotePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */; };
 		CBCC329016F2467C00D00A03 /* UVSViewCreatePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCC328F16F2467C00D00A03 /* UVSViewCreatePoll.m */; };
+		FEC085DC16FAB61A00F8F408 /* UVSCreatePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC085DB16FAB61A00F8F408 /* UVSCreatePoll.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewVotePoll.m; sourceTree = "<group>"; };
 		CBCC328E16F2467C00D00A03 /* UVSViewCreatePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSViewCreatePoll.h; sourceTree = "<group>"; };
 		CBCC328F16F2467C00D00A03 /* UVSViewCreatePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewCreatePoll.m; sourceTree = "<group>"; };
+		FEC085DA16FAB61A00F8F408 /* UVSCreatePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSCreatePoll.h; sourceTree = "<group>"; };
+		FEC085DB16FAB61A00F8F408 /* UVSCreatePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSCreatePoll.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				CBA3230216F0EF0400C51537 /* UVSTests.h */,
 				CBA3230316F0EF0400C51537 /* UVSTests.m */,
 				CBA322FD16F0EF0400C51537 /* Supporting Files */,
+				FEC085DA16FAB61A00F8F408 /* UVSCreatePoll.h */,
+				FEC085DB16FAB61A00F8F408 /* UVSCreatePoll.m */,
 			);
 			path = UVSTests;
 			sourceTree = "<group>";
@@ -225,7 +230,7 @@
 			attributes = {
 				CLASSPREFIX = UVS;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "4350uvs";
+				ORGANIZATIONNAME = 4350uvs;
 			};
 			buildConfigurationList = CBA322C716F0EF0300C51537 /* Build configuration list for PBXProject "UVS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -304,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBA3230416F0EF0400C51537 /* UVSTests.m in Sources */,
+				FEC085DC16FAB61A00F8F408 /* UVSCreatePoll.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
