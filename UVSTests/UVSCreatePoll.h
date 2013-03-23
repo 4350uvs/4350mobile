@@ -5,6 +5,15 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface UVSCreatePoll : SenTestCase
+#import <UIKit/UIKit.h>
+
+#import "UVSAppDelegate.h"
+#import "UVSViewCreatePoll.h"
+
+@interface UVSCreatePoll : SenTestCase {
+@private
+    UVSAppDelegate *appDelegate;
+    UVSViewCreatePoll *uvsViewCreatePoll;
+}
 
 @end
