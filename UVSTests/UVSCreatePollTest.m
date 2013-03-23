@@ -1,11 +1,11 @@
 //
-//  UVSCreatePoll.m
+//  UVSCreatePollTest.m
 //  UVS
 //
 
-#import "UVSCreatePoll.h"
+#import "UVSCreatePollTest.h"
 
-@implementation UVSCreatePoll
+@implementation UVSCreatePollTest
 
 - (void)setUp {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPad" bundle: nil];

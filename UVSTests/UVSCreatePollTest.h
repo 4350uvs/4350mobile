@@ -1,5 +1,5 @@
 //
-//  UVSCreatePoll.h
+//  UVSCreatePollTest.h
 //  UVS
 //
 
@@ -10,7 +10,7 @@
 #import "UVSAppDelegate.h"
 #import "UVSViewCreatePoll.h"
 
-@interface UVSCreatePoll : SenTestCase {
+@interface UVSCreatePollTest : SenTestCase {
 @private
     UVSAppDelegate *appDelegate;
     UVSViewCreatePoll *uvsViewCreatePoll;

@@ -27,7 +27,7 @@
 		CBA3230416F0EF0400C51537 /* UVSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3230316F0EF0400C51537 /* UVSTests.m */; };
 		CBA3230F16F0F34D00C51537 /* UVSViewVotePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */; };
 		CBCC329016F2467C00D00A03 /* UVSViewCreatePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCC328F16F2467C00D00A03 /* UVSViewCreatePoll.m */; };
-		FE6D658616FD4C95005520C7 /* UVSCreatePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D658516FD4C95005520C7 /* UVSCreatePoll.m */; };
+		FE6D658616FD4C95005520C7 /* UVSCreatePollTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D658516FD4C95005520C7 /* UVSCreatePollTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +74,8 @@
 		CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewVotePoll.m; sourceTree = "<group>"; };
 		CBCC328E16F2467C00D00A03 /* UVSViewCreatePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSViewCreatePoll.h; sourceTree = "<group>"; };
 		CBCC328F16F2467C00D00A03 /* UVSViewCreatePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewCreatePoll.m; sourceTree = "<group>"; };
-		FE6D658416FD4C95005520C7 /* UVSCreatePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSCreatePoll.h; sourceTree = "<group>"; };
-		FE6D658516FD4C95005520C7 /* UVSCreatePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSCreatePoll.m; sourceTree = "<group>"; };
+		FE6D658416FD4C95005520C7 /* UVSCreatePollTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSCreatePollTest.h; sourceTree = "<group>"; };
+		FE6D658516FD4C95005520C7 /* UVSCreatePollTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSCreatePollTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +170,8 @@
 		CBA322FC16F0EF0400C51537 /* UVSTests */ = {
 			isa = PBXGroup;
 			children = (
-				FE6D658416FD4C95005520C7 /* UVSCreatePoll.h */,
-				FE6D658516FD4C95005520C7 /* UVSCreatePoll.m */,
+				FE6D658416FD4C95005520C7 /* UVSCreatePollTest.h */,
+				FE6D658516FD4C95005520C7 /* UVSCreatePollTest.m */,
 				CBA3230216F0EF0400C51537 /* UVSTests.h */,
 				CBA3230316F0EF0400C51537 /* UVSTests.m */,
 				CBA322FD16F0EF0400C51537 /* Supporting Files */,
@@ -317,7 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBA3230416F0EF0400C51537 /* UVSTests.m in Sources */,
-				FE6D658616FD4C95005520C7 /* UVSCreatePoll.m in Sources */,
+				FE6D658616FD4C95005520C7 /* UVSCreatePollTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
