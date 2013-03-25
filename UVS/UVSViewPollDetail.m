@@ -166,8 +166,7 @@ UIView *resultsView;
 //sent to "PUT /polls/x/choices", where x is the pid
 - (void)submitPollVote:(int)pidInt cid:(int)choiceID
 {
-    //i.e: curl -X PUT -d "cid=94" http://ec2-54-235-121-23.compute-1.amazonaws.com:8274/polls/42/choices
-    
+
     //build submission URL
     NSString *urlStr = [NSString stringWithFormat:@"%@/polls/%d/choices", ServerURL, pidInt];
     NSURL *url = [NSURL URLWithString:urlStr];
