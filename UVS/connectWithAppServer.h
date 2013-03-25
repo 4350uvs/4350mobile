@@ -2,12 +2,13 @@
 //  connectWithAppServer.h
 //  UVS
 //
-//  Created by Richard Bruneau on 2013-03-25.
-//  Copyright (c) 2013 Richard Bruneau. All rights reserved.
+//  Copyright (c) COMP4350 - Group 3 - UVS. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 @interface connectWithAppServer : NSObject
+
+- (NSData *)connectWithAppServerAtURL:(NSString*)uri paramToSend:(NSString *)param methodToUse:(NSString *)method;
 
 @end

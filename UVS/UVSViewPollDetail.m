@@ -7,6 +7,7 @@
 
 #import "UVSViewPollDetail.h"
 #import "defines.h"
+#import "connectWithAppServer.h"
 
 @interface UVSViewPollDetail (){
 
@@ -166,7 +167,7 @@ UIView *resultsView;
 //sent to "PUT /polls/x/choices", where x is the pid
 - (void)submitPollVote:(int)pidInt cid:(int)choiceID
 {
-
+    
     //build submission URL
     NSString *urlStr = [NSString stringWithFormat:@"%@/polls/%d/choices", ServerURL, pidInt];
     NSURL *url = [NSURL URLWithString:urlStr];
@@ -196,6 +197,14 @@ UIView *resultsView;
         pollDetailText.text = @"Error. You have been nullified in the democratic process...";
         
     }
+    
+    connectWithAppServer *connectToAPI = [connectWithAppServer alloc];
+    
+    NSData *testData = [connectToAPI connectWithAppServerAtURL:[NSString stringWithFormat:@"/polls/%d/choices", pidInt]
+                                                   paramToSend:[NSString stringWithFormat:@"cid=%d", choiceID]
+                                                   methodToUse:@"PUT"];
+    
+    NSLog(@"TEST: %@", testData);
     
     
     //Error and test output

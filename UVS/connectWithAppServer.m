@@ -2,8 +2,7 @@
 //  connectWithAppServer.m
 //  UVS
 //
-//  Created by Richard Bruneau on 2013-03-25.
-//  Copyright (c) 2013 Richard Bruneau. All rights reserved.
+//  Copyright (c) COMP4350 - Group 3 - UVS. All rights reserved.
 //
 
 #import "connectWithAppServer.h"
@@ -31,9 +30,14 @@ NSString *dataStr = param;
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     
     
+    //TEST
     NSLog(@"connectWithAppServer - Response: %@", response);
     NSLog(@"connectWithAppServer - Error: %@", error);
     NSLog(@"connectWithAppServer - Data: %@", responseData);
+    
+    NSLog(@"HTTP STATUS: %d" , [(NSHTTPURLResponse *)response statusCode] );
+    NSLog(@"ERROR CODE: %d" , error.code );
+    //TEST
     
     
     if (response == nil) {
