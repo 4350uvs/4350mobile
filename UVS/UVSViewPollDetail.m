@@ -80,14 +80,26 @@ UIView *resultsView;
     [choiceArray removeAllObjects];
     [cidArray removeAllObjects];
     [countArray removeAllObjects];
+
     
+    connectWithAppServer *connectToAPI = [connectWithAppServer alloc];
     
-    NSString *urlStr = [NSString stringWithFormat:@"%@/polls/%d", ServerURL, self.pollNum];
-    NSURL *url = [NSURL URLWithString:urlStr];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    NSError *err;
-    NSURLResponse *response;
-    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
+    NSMutableArray *responseArray = [connectToAPI connectWithAppServerAtURL:[NSString stringWithFormat:@"/polls/%d", pidInt]
+                                                                paramToSend:[NSString stringWithFormat:@""]
+                                                                methodToUse:@"GET"];
+    
+    NSData *responseData = [responseArray objectAtIndex:0];
+    NSURLResponse *response = [responseArray objectAtIndex:1];
+    
+    if ( [(NSHTTPURLResponse *)response statusCode] == 200 ){
+        
+        pollDetailText.text = @"Poll retrieval successful.";
+        
+    }else{
+        
+        pollDetailText.text = @"Error. Voting data could not be retrieved. Check for tyranny.";
+        
+    }
     
     //instantiate and clear out jsonData
     jsonData = [[NSMutableData alloc]init];
