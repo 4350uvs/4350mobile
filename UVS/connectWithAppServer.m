@@ -30,14 +30,7 @@
     [request setHTTPBody:[dataStr dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES]];
 	
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-    
-    
-    //TEST
-    NSLog(@"connectWithAppServer - Response Data: %@", responseData);
-    NSLog(@"connectWithAppServer - Response: %@", response);
-    NSLog(@"connectWithAppServer - Error: %@", error);
-    //TEST
-    
+
     
     if (response == nil) {
         

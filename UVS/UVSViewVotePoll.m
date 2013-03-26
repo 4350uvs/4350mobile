@@ -68,11 +68,17 @@
 
          
     NSError *jsonErr;
-         
+    
+    //create dictionary from JSON serializaton
     NSDictionary *allDataDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&jsonErr];
+    
+    //use key "polls" to get the polls object
     NSArray *polls = [allDataDictionary objectForKey:@"polls"];
 
-     
+    
+    //iterate through dictionary and add titles to array
+    //and add pids to pollIDArr - pids are forwarded by the segue
+    //to the ViewPollDetail view controller
     for (NSDictionary *dict in polls) {
         NSString *pollTitle = [dict objectForKey:@"title"];
         NSInteger pollID = [[dict objectForKey:@"id"] intValue];
@@ -130,8 +136,6 @@
         NSUInteger currRow = index.row;
 
         pollDetailController.pollNum = [[pollIDArr objectAtIndex:currRow]integerValue];
-
-        NSLog(@"pid: %d", [[pollIDArr objectAtIndex:currRow] integerValue]);
         
         pollDetailController.pollName = [array objectAtIndex:currRow];
     }
