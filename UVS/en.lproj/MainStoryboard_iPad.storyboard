@@ -91,51 +91,12 @@
                                     <segue destination="gh1-Fa-mdK" kind="modal" id="Wdf-sD-ZOS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0u-I7-76y">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Survey">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBR-wd-uev">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Lecture Session">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5x-mm-LUS">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Election">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="H0u-I7-76y" firstAttribute="leading" secondItem="wWf-hc-lcP" secondAttribute="leading" type="default" id="1sq-AI-afL"/>
-                            <constraint firstItem="x5x-mm-LUS" firstAttribute="leading" secondItem="CBR-wd-uev" secondAttribute="leading" type="default" id="2yX-1l-rcl"/>
-                            <constraint firstItem="wWf-hc-lcP" firstAttribute="trailing" secondItem="H0u-I7-76y" secondAttribute="trailing" type="default" id="7me-eH-EGh"/>
-                            <constraint firstItem="H0u-I7-76y" firstAttribute="top" secondItem="Wgf-tF-emg" secondAttribute="top" constant="208" id="8wx-TU-kIF"/>
-                            <constraint firstItem="H0u-I7-76y" firstAttribute="centerX" secondItem="Wgf-tF-emg" secondAttribute="centerX" type="default" id="8yr-s1-Jjr"/>
-                            <constraint firstItem="x5x-mm-LUS" firstAttribute="top" secondItem="Wgf-tF-emg" secondAttribute="top" constant="326" id="EZo-TP-ZBc"/>
-                            <constraint firstItem="CBR-wd-uev" firstAttribute="top" secondItem="Wgf-tF-emg" secondAttribute="top" constant="268" id="GBz-uK-inz"/>
-                            <constraint firstItem="CBR-wd-uev" firstAttribute="trailing" secondItem="H0u-I7-76y" secondAttribute="trailing" type="default" id="VET-f1-ajk"/>
                             <constraint firstItem="wWf-hc-lcP" firstAttribute="top" secondItem="Wgf-tF-emg" secondAttribute="top" constant="147" id="aNQ-52-y2z"/>
+                            <constraint firstItem="wWf-hc-lcP" firstAttribute="centerX" secondItem="Wgf-tF-emg" secondAttribute="centerX" type="default" id="eZS-8L-WaD"/>
                             <constraint firstItem="vsu-Og-u6b" firstAttribute="leading" secondItem="Wgf-tF-emg" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="iY3-yd-9AA"/>
-                            <constraint firstItem="CBR-wd-uev" firstAttribute="leading" secondItem="H0u-I7-76y" secondAttribute="leading" type="default" id="uTo-PT-NSi"/>
-                            <constraint firstItem="x5x-mm-LUS" firstAttribute="trailing" secondItem="CBR-wd-uev" secondAttribute="trailing" type="default" id="xNg-Zn-Snt"/>
                             <constraint firstItem="vsu-Og-u6b" firstAttribute="top" secondItem="Wgf-tF-emg" secondAttribute="top" constant="5" id="zrS-u4-MV8"/>
                         </constraints>
                     </view>
@@ -506,52 +467,13 @@
                                     <segue destination="2z8-Xa-HfQ" kind="modal" id="63l-62-5VT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSJ-Gj-tdy">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Survey">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udy-tf-z0O">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Lecture Session">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsw-jj-dni">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Election">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Wsw-jj-dni" firstAttribute="top" secondItem="92X-XV-CvT" secondAttribute="top" constant="326" id="7CW-ZI-vK3"/>
-                            <constraint firstItem="HnG-eR-Ken" firstAttribute="leading" secondItem="cSJ-Gj-tdy" secondAttribute="leading" type="default" id="Jth-3q-UTM"/>
                             <constraint firstItem="HnG-eR-Ken" firstAttribute="top" secondItem="92X-XV-CvT" secondAttribute="top" constant="147" id="KAT-o1-z5z"/>
-                            <constraint firstItem="Wsw-jj-dni" firstAttribute="leading" secondItem="udy-tf-z0O" secondAttribute="leading" type="default" id="LlN-0O-41d"/>
-                            <constraint firstItem="cSJ-Gj-tdy" firstAttribute="centerX" secondItem="92X-XV-CvT" secondAttribute="centerX" type="default" id="O7v-vd-wnT"/>
-                            <constraint firstItem="udy-tf-z0O" firstAttribute="top" secondItem="92X-XV-CvT" secondAttribute="top" constant="268" id="PzU-F7-pld"/>
-                            <constraint firstItem="cSJ-Gj-tdy" firstAttribute="top" secondItem="92X-XV-CvT" secondAttribute="top" constant="208" id="RTi-Kh-bdT"/>
                             <constraint firstItem="SSQ-rP-vJF" firstAttribute="leading" secondItem="92X-XV-CvT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="VSw-k5-qwV"/>
-                            <constraint firstItem="cSJ-Gj-tdy" firstAttribute="leading" secondItem="udy-tf-z0O" secondAttribute="leading" type="default" id="b6n-f9-H8f"/>
-                            <constraint firstItem="Wsw-jj-dni" firstAttribute="trailing" secondItem="udy-tf-z0O" secondAttribute="trailing" type="default" id="kbM-Bt-hEa"/>
-                            <constraint firstItem="cSJ-Gj-tdy" firstAttribute="trailing" secondItem="HnG-eR-Ken" secondAttribute="trailing" type="default" id="vXj-n6-5xt"/>
+                            <constraint firstItem="HnG-eR-Ken" firstAttribute="centerX" secondItem="92X-XV-CvT" secondAttribute="centerX" type="default" id="Vbc-lU-dMf"/>
                             <constraint firstItem="SSQ-rP-vJF" firstAttribute="top" secondItem="92X-XV-CvT" secondAttribute="top" constant="5" id="w7e-LQ-ukW"/>
-                            <constraint firstItem="udy-tf-z0O" firstAttribute="trailing" secondItem="cSJ-Gj-tdy" secondAttribute="trailing" type="default" id="w8K-t9-8DP"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Create A ..." id="PLI-Qe-aMY"/>
