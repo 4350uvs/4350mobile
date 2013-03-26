@@ -24,6 +24,7 @@ static int numSelected = 2;
 
 @implementation UVSViewCreatePoll
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,6 +33,7 @@ static int numSelected = 2;
     }
     return self;
 }
+
 
 - (void)viewDidLoad
 {
@@ -43,25 +45,29 @@ static int numSelected = 2;
     
 }
 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
 }
 
+
+//Selects number of choices that the poll will have
+//will disable (some) lower UITextFields if number <5 selected
 -(IBAction) choiceSegment:(id)sender{
-    
-    NSLog(@"Segment action",nil);
     
     UISegmentedControl *segControl = sender;
     int selectedIndex = [segControl selectedSegmentIndex];
     
     //disable fields based on segment index
-    NSLog(@"Seg pressed %d", selectedIndex);
+
     numSelected = selectedIndex + 2;
     [self disableChoiceFieldsBasedOnUserChoice:numSelected];
-    NSLog(@"Selected %d", numSelected);
+
 }
 
+
+//disables the lower (5-numSelected) choice fields based on numSelected send from choiceSegment
 - (void)disableChoiceFieldsBasedOnUserChoice:(int)numSelected {
     
     for (int i = 0; i < [self.pollChoices count]; i++) {
@@ -77,56 +83,36 @@ static int numSelected = 2;
     }
 }
 
+
+//on clicking the "Submit" button the poll is submitted the server
+//a 201 CREATED will indicate that creation was successful
 - (IBAction)submitPoll:(id)sender {
     
-    /*
-    NSString *urlStr = [NSString stringWithFormat:@"%@/polls", ServerURL];
-    NSURL *url = [NSURL URLWithString:urlStr];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    connectWithAppServer *connectToAPI = [connectWithAppServer alloc];
     
-    //title + choices as parameters to api - :8274/polls
-    NSString *dataStr = [self getChoices];
-    
-    //all other HTTP values set automatically
-    [request setHTTPMethod:@"POST"];
-    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-    [request setHTTPBody:[dataStr dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES]];
-    
-    //response will contain poll id, otherwise error
-    NSURLResponse *response;
-    NSError *err;
-    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
+    NSMutableArray *responseArray = [connectToAPI connectWithAppServerAtURL:[NSString stringWithFormat:@"/polls"]
+                                                                paramToSend:[NSString stringWithFormat:@"%@", [self getChoicesAsString]]
+                                                                methodToUse:@"POST"];
     
     
-    if (err == nil){
+    NSURLResponse *response = [responseArray objectAtIndex:1];
+    
+    //check that response is good (201 CREATED)
+    if ( [(NSHTTPURLResponse *)response statusCode] == 201 ){
         
         self.msgBox.text = @"Poll creation successful.";
         
     }else{
         
-        self.msgBox.text = @"Error. No one will ever see your poll now...";
+       self.msgBox.text = @"Error. No one will ever see your poll now...";
         
     }
-    */
-    
-    connectWithAppServer *connectToAPI = [connectWithAppServer alloc];
-    
-    NSMutableArray *testData = [connectToAPI connectWithAppServerAtURL:[NSString stringWithFormat:@"/polls"]
-                                                   paramToSend:[NSString stringWithFormat:@"%@", [self getChoices]]
-                                                   methodToUse:@"POST"];
-    
-    NSLog(@"TEST - CreatePoll: %@", testData);
-    
-    
-    
-    //Error and test output
-    //NSLog(@"Error(s): %@", err);
-    //NSLog(@"RESPONSE: %@", responseData);
-    NSLog(@"Form values: %@ %@ %@ %@ %@ %@ %@ %@", self.pollTitle.text, self.pollCreator.text, self.pollQuestion.text, self.pollChoice1.text, self.pollChoice2.text, self.pollChoice3.text, self.pollChoice4.text, self.pollChoice5.text );
     
 }
 
-- (NSString*)getChoices{
+
+//aggregates all choices in the choice fields and returns it as a string
+- (NSString*)getChoicesAsString{
     
     //creates output for 2
     NSString *retStr = [NSString stringWithFormat:@"title=%@&choice=%@&choice=%@", self.pollTitle.text, self.pollChoice1.text, self.pollChoice2.text];
@@ -145,5 +131,6 @@ static int numSelected = 2;
     
     return retStr;
 }
+
 
 @end

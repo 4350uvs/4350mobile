@@ -175,27 +175,30 @@ UIView *resultsView;
 
 
 //submit a poll choice to the server
-//parameter set to "cid=choiceID" (as an integer identifier for a choice)
-//sent to "PUT /polls/x/choices", where x is the pid
 - (void)submitPollVote:(int)pidInt cid:(int)choiceID
 {
-
+    
+    //create connection to send data to API
+    //polls/x/choices where x=pid
+    //cid=y where y=cid
     connectWithAppServer *connectToAPI = [connectWithAppServer alloc];
     
     NSMutableArray *responseArray = [connectToAPI connectWithAppServerAtURL:[NSString stringWithFormat:@"/polls/%d/choices", pidInt]
-                                                   paramToSend:[NSString stringWithFormat:@"cid=%d", choiceID]
-                                                   methodToUse:@"PUT"];
+                                                                paramToSend:[NSString stringWithFormat:@"cid=%d", choiceID]
+                                                                methodToUse:@"PUT"];
+    
     
     NSURLResponse *response = [responseArray objectAtIndex:1];
-    NSError *error = [responseArray objectAtIndex:2];
     
-    if ( [(NSHTTPURLResponse *)response statusCode] == 200 && error == nil){
+    
+    //check that response is good (200 OK)
+    if ( [(NSHTTPURLResponse *)response statusCode] == 200 ){
         
         pollDetailText.text = @"Vote submission successful.";
         
     }else{
         
-        pollDetailText.text = @"Error. You have been nullified in the democratic process...";
+        pollDetailText.text = @"Error. Vote could not be submitted. You have been nullified in the democratic process.";
         
     }
     
