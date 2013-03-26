@@ -26,7 +26,11 @@
 		CBA3230116F0EF0400C51537 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBA322FF16F0EF0400C51537 /* InfoPlist.strings */; };
 		CBA3230416F0EF0400C51537 /* UVSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3230316F0EF0400C51537 /* UVSTests.m */; };
 		CBA3230F16F0F34D00C51537 /* UVSViewVotePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */; };
+		CBB3E88A1702115900947E28 /* logo-3-PSD-TEXT-TRANS-PNG-SM.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB3E8891702115800947E28 /* logo-3-PSD-TEXT-TRANS-PNG-SM.png */; };
+		CBB3E88E170212B400947E28 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB3E88D170212B400947E28 /* icon.png */; };
+		CBB3E8921702134C00947E28 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB3E8911702134C00947E28 /* icon@2x.png */; };
 		CBCC329016F2467C00D00A03 /* UVSViewCreatePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCC328F16F2467C00D00A03 /* UVSViewCreatePoll.m */; };
+		CBF369BF1700C4C600838846 /* connectWithAppServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF369BE1700C4C600838846 /* connectWithAppServer.m */; };
 		FE6D658616FD4C95005520C7 /* UVSCreatePollTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D658516FD4C95005520C7 /* UVSCreatePollTest.m */; };
 /* End PBXBuildFile section */
 
@@ -72,8 +76,13 @@
 		CBA3230316F0EF0400C51537 /* UVSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSTests.m; sourceTree = "<group>"; };
 		CBA3230D16F0F34D00C51537 /* UVSViewVotePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSViewVotePoll.h; sourceTree = "<group>"; };
 		CBA3230E16F0F34D00C51537 /* UVSViewVotePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewVotePoll.m; sourceTree = "<group>"; };
+		CBB3E8891702115800947E28 /* logo-3-PSD-TEXT-TRANS-PNG-SM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-3-PSD-TEXT-TRANS-PNG-SM.png"; sourceTree = "<group>"; };
+		CBB3E88D170212B400947E28 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		CBB3E8911702134C00947E28 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		CBCC328E16F2467C00D00A03 /* UVSViewCreatePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSViewCreatePoll.h; sourceTree = "<group>"; };
 		CBCC328F16F2467C00D00A03 /* UVSViewCreatePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSViewCreatePoll.m; sourceTree = "<group>"; };
+		CBF369BD1700C4C600838846 /* connectWithAppServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connectWithAppServer.h; sourceTree = "<group>"; };
+		CBF369BE1700C4C600838846 /* connectWithAppServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = connectWithAppServer.m; sourceTree = "<group>"; };
 		FE6D658416FD4C95005520C7 /* UVSCreatePollTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSCreatePollTest.h; sourceTree = "<group>"; };
 		FE6D658516FD4C95005520C7 /* UVSCreatePollTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSCreatePollTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +114,8 @@
 		CBA322C316F0EF0300C51537 = {
 			isa = PBXGroup;
 			children = (
+				CBB3E8911702134C00947E28 /* icon@2x.png */,
+				CBB3E88D170212B400947E28 /* icon.png */,
 				CBA322D516F0EF0300C51537 /* UVS */,
 				CBA322FC16F0EF0400C51537 /* UVSTests */,
 				CBA322CE16F0EF0300C51537 /* Frameworks */,
@@ -135,6 +146,7 @@
 		CBA322D516F0EF0300C51537 /* UVS */ = {
 			isa = PBXGroup;
 			children = (
+				CBB3E8891702115800947E28 /* logo-3-PSD-TEXT-TRANS-PNG-SM.png */,
 				CBA322DE16F0EF0300C51537 /* UVSAppDelegate.h */,
 				CBA322DF16F0EF0400C51537 /* UVSAppDelegate.m */,
 				CBA322E716F0EF0400C51537 /* MainStoryboard_iPhone.storyboard */,
@@ -163,6 +175,8 @@
 				CBA322E116F0EF0400C51537 /* Default.png */,
 				CBA322E316F0EF0400C51537 /* Default@2x.png */,
 				CBA322E516F0EF0400C51537 /* Default-568h@2x.png */,
+				CBF369BD1700C4C600838846 /* connectWithAppServer.h */,
+				CBF369BE1700C4C600838846 /* connectWithAppServer.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -269,6 +283,9 @@
 				CBA322E616F0EF0400C51537 /* Default-568h@2x.png in Resources */,
 				CBA322E916F0EF0400C51537 /* MainStoryboard_iPhone.storyboard in Resources */,
 				CBA322EC16F0EF0400C51537 /* MainStoryboard_iPad.storyboard in Resources */,
+				CBB3E88A1702115900947E28 /* logo-3-PSD-TEXT-TRANS-PNG-SM.png in Resources */,
+				CBB3E88E170212B400947E28 /* icon.png in Resources */,
+				CBB3E8921702134C00947E28 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +326,7 @@
 				CBA3230F16F0F34D00C51537 /* UVSViewVotePoll.m in Sources */,
 				CBCC329016F2467C00D00A03 /* UVSViewCreatePoll.m in Sources */,
 				CB84FF5616F3AA00008F7AE7 /* UVSViewPollDetail.m in Sources */,
+				CBF369BF1700C4C600838846 /* connectWithAppServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
