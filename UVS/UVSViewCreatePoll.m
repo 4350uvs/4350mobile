@@ -7,6 +7,8 @@
 
 #import "UVSViewCreatePoll.h"
 #import "defines.h"
+#import "connectWithAppServer.h"
+
 
 //Supposed to be the default for UISegmentControl
 //but I don't trust it... therefore, set here
@@ -104,6 +106,16 @@ static int numSelected = 2;
         self.msgBox.text = @"Error. No one will ever see your poll now...";
         
     }
+    
+    
+    connectWithAppServer *connectToAPI = [connectWithAppServer alloc];
+    
+    NSData *testData = [connectToAPI connectWithAppServerAtURL:[NSString stringWithFormat:@"/polls"]
+                                                   paramToSend:[NSString stringWithFormat:@"%@", [self getChoices]]
+                                                   methodToUse:@"POST"];
+    
+    NSLog(@"TEST - CreatePoll: %@", testData);
+    
     
     
     //Error and test output

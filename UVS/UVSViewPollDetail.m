@@ -198,13 +198,14 @@ UIView *resultsView;
         
     }
     
+    
     connectWithAppServer *connectToAPI = [connectWithAppServer alloc];
     
     NSData *testData = [connectToAPI connectWithAppServerAtURL:[NSString stringWithFormat:@"/polls/%d/choices", pidInt]
                                                    paramToSend:[NSString stringWithFormat:@"cid=%d", choiceID]
                                                    methodToUse:@"PUT"];
     
-    NSLog(@"TEST: %@", testData);
+    NSLog(@"TEST - PollDetail: %@", testData);
     
     
     //Error and test output

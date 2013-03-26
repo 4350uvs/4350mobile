@@ -14,16 +14,16 @@
 - (NSData *)connectWithAppServerAtURL:(NSString*)uri paramToSend:(NSString *)param methodToUse:(NSString *)method
 {
     
-NSString *urlStr = [NSString stringWithFormat:@"%@/%@", ServerURL, uri];
+    NSString *urlStr = [NSString stringWithFormat:@"%@/%@", ServerURL, uri];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
 	
-NSString *dataStr = param;
+    NSString *dataStr = param;
     
     NSError *error;
     NSURLResponse *response;
     
-[request setHTTPMethod:[NSString stringWithFormat:@"%@", method] ];
+    [request setHTTPMethod:[NSString stringWithFormat:@"%@", method] ];
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody:[dataStr dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES]];
 	
@@ -32,7 +32,7 @@ NSString *dataStr = param;
     
     //TEST
     NSLog(@"connectWithAppServer - Response: %@", response);
-    NSLog(@"connectWithAppServer - Error: %@", error);
+    NSLog(@"connectWithAppServer - Error1: %@", error);
     NSLog(@"connectWithAppServer - Data: %@", responseData);
     
     NSLog(@"HTTP STATUS: %d" , [(NSHTTPURLResponse *)response statusCode] );
