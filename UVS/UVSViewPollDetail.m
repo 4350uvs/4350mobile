@@ -167,28 +167,17 @@ UIView *resultsView;
 //sent to "PUT /polls/x/choices", where x is the pid
 - (void)submitPollVote:(int)pidInt cid:(int)choiceID
 {
+
+    connectWithAppServer *connectToAPI = [connectWithAppServer alloc];
     
-    //build submission URL
-    NSString *urlStr = [NSString stringWithFormat:@"%@/polls/%d/choices", ServerURL, pidInt];
-    NSURL *url = [NSURL URLWithString:urlStr];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    NSMutableArray *responseArray = [connectToAPI connectWithAppServerAtURL:[NSString stringWithFormat:@"/polls/%d/choices", pidInt]
+                                                   paramToSend:[NSString stringWithFormat:@"cid=%d", choiceID]
+                                                   methodToUse:@"PUT"];
     
-    //set the parameter
-    NSString *dataStr = [NSString stringWithFormat:@"cid=%d", choiceID];
+    NSURLResponse *response = [responseArray objectAtIndex:1];
+    NSError *error = [responseArray objectAtIndex:2];
     
-    //set HTTP headers in the request
-    //all other HTTP values set automatically
-    [request setHTTPMethod:@"PUT"];
-    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-    [request setHTTPBody:[dataStr dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES]];
-    
-    //response 
-    NSURLResponse *response;
-    NSError *err;
-    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
-    
-    
-    if (err == nil){
+    if ( [(NSHTTPURLResponse *)response statusCode] == 200 && error == nil){
         
         pollDetailText.text = @"Vote submission successful.";
         
@@ -197,20 +186,6 @@ UIView *resultsView;
         pollDetailText.text = @"Error. You have been nullified in the democratic process...";
         
     }
-    
-    
-    connectWithAppServer *connectToAPI = [connectWithAppServer alloc];
-    
-    NSData *testData = [connectToAPI connectWithAppServerAtURL:[NSString stringWithFormat:@"/polls/%d/choices", pidInt]
-                                                   paramToSend:[NSString stringWithFormat:@"cid=%d", choiceID]
-                                                   methodToUse:@"PUT"];
-    
-    NSLog(@"TEST - PollDetail: %@", testData);
-    
-    
-    //Error and test output
-    NSLog(@"Error(s): %@", err);
-    NSLog(@"RESPONSE: %@", responseData);
     
 }
 

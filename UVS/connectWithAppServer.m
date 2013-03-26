@@ -11,8 +11,10 @@
 
 @implementation connectWithAppServer
 
-- (NSData *)connectWithAppServerAtURL:(NSString*)uri paramToSend:(NSString *)param methodToUse:(NSString *)method
+- (NSMutableArray *)connectWithAppServerAtURL:(NSString*)uri paramToSend:(NSString *)param methodToUse:(NSString *)method
 {
+    
+    NSMutableArray *returnData = [[NSMutableArray alloc] init];
     
     NSString *urlStr = [NSString stringWithFormat:@"%@/%@", ServerURL, uri];
     NSURL *url = [NSURL URLWithString:urlStr];
@@ -31,12 +33,9 @@
     
     
     //TEST
+    NSLog(@"connectWithAppServer - Response Data: %@", responseData);
     NSLog(@"connectWithAppServer - Response: %@", response);
-    NSLog(@"connectWithAppServer - Error1: %@", error);
-    NSLog(@"connectWithAppServer - Data: %@", responseData);
-    
-    NSLog(@"HTTP STATUS: %d" , [(NSHTTPURLResponse *)response statusCode] );
-    NSLog(@"ERROR CODE: %d" , error.code );
+    NSLog(@"connectWithAppServer - Error: %@", error);
     //TEST
     
     
@@ -48,9 +47,20 @@
             NSLog(@"connectWithAppServer - Error: %@", error);
         }
         
+    }else{
+    
+        [returnData addObject:responseData];
+        [returnData addObject:response];
+        
+        if ( error == nil ){
+            [returnData addObject:[NSNull null]];
+        }else{
+            [returnData addObject:error];
+        }
+        
     }
 
-    return responseData;
+    return returnData;
     
 }
 

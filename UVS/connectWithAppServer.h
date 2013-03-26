@@ -9,6 +9,6 @@
 
 @interface connectWithAppServer : NSObject
 
-- (NSData *)connectWithAppServerAtURL:(NSString*)uri paramToSend:(NSString *)param methodToUse:(NSString *)method;
+- (NSMutableArray *)connectWithAppServerAtURL:(NSString*)uri paramToSend:(NSString *)param methodToUse:(NSString *)method;
 
 @end

@@ -79,6 +79,7 @@ static int numSelected = 2;
 
 - (IBAction)submitPoll:(id)sender {
     
+    /*
     NSString *urlStr = [NSString stringWithFormat:@"%@/polls", ServerURL];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -106,11 +107,11 @@ static int numSelected = 2;
         self.msgBox.text = @"Error. No one will ever see your poll now...";
         
     }
-    
+    */
     
     connectWithAppServer *connectToAPI = [connectWithAppServer alloc];
     
-    NSData *testData = [connectToAPI connectWithAppServerAtURL:[NSString stringWithFormat:@"/polls"]
+    NSMutableArray *testData = [connectToAPI connectWithAppServerAtURL:[NSString stringWithFormat:@"/polls"]
                                                    paramToSend:[NSString stringWithFormat:@"%@", [self getChoices]]
                                                    methodToUse:@"POST"];
     
@@ -119,8 +120,8 @@ static int numSelected = 2;
     
     
     //Error and test output
-    NSLog(@"Error(s): %@", err);
-    NSLog(@"RESPONSE: %@", responseData);
+    //NSLog(@"Error(s): %@", err);
+    //NSLog(@"RESPONSE: %@", responseData);
     NSLog(@"Form values: %@ %@ %@ %@ %@ %@ %@ %@", self.pollTitle.text, self.pollCreator.text, self.pollQuestion.text, self.pollChoice1.text, self.pollChoice2.text, self.pollChoice3.text, self.pollChoice4.text, self.pollChoice5.text );
     
 }
