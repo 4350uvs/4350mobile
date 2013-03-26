@@ -8,6 +8,7 @@
 #import "UVSViewVotePoll.h"
 #import "UVSViewPollDetail.h"
 #import "defines.h"
+#import "connectWithAppServer.h"
 
 @interface UVSViewVotePoll (){
     
@@ -37,73 +38,65 @@
 	// Do any additional setup after loading the view.
     
     
-    [[self pollTable]setDelegate:self];
-    [[self pollTable]setDataSource:self];
+    [[self pollTable] setDelegate:self];
+    [[self pollTable] setDataSource:self];
     array = [[NSMutableArray alloc] init];
     pollIDArr = [[NSMutableArray alloc] init];
     
-    [self loadTable];
+    [self getListOfPolls];
     
 }
 
--(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
-{
+
+//calls server and gets a JSON object with all polls
+-(void)getListOfPolls{
+    
+    [array removeAllObjects];
+
+    connectWithAppServer *connectToAPI = [connectWithAppServer alloc];
+
+    NSMutableArray *responseArray = [connectToAPI connectWithAppServerAtURL:[NSString stringWithFormat:@"/polls"]
+                                                                paramToSend:[NSString stringWithFormat:@""]
+                                                                methodToUse:@"GET"];
+    
+    
+    NSData *responseData = [responseArray objectAtIndex:0];
+         
+    jsonData = [[NSMutableData alloc] init];
     [jsonData setLength:0];
-}
+    [jsonData appendData:responseData];
 
--(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
-    [jsonData appendData:data];
-}
-
--(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
-{
-    NSLog(@"Communication with the app server failed. Please check your Internet connection.");
-    //TODO notice to user
-}
-
--(void)connectionDidFinishLoading:(NSURLConnection *)connection
-{
-    NSDictionary *allDataDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
+         
+    NSError *jsonErr;
+         
+    NSDictionary *allDataDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&jsonErr];
     NSArray *polls = [allDataDictionary objectForKey:@"polls"];
-    
+
+     
     for (NSDictionary *dict in polls) {
         NSString *pollTitle = [dict objectForKey:@"title"];
         NSInteger pollID = [[dict objectForKey:@"id"] intValue];
-        
+
         [array addObject:pollTitle];
         [pollIDArr addObject: [NSNumber numberWithInteger:pollID]];
     }
-    [[self pollTable]reloadData];
+     
+    [[self pollTable] reloadData];
+     
 }
 
--(void)loadTable{
-    
-    [array removeAllObjects];
-    
-    NSString *urlStr = [NSString stringWithFormat:@"%@/polls", ServerURL];
-    NSURL *url = [NSURL URLWithString:urlStr];
-
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
-    connection = [NSURLConnection connectionWithRequest:request delegate:self];
-    
-    if(connection)
-    {
-        jsonData = [[NSMutableData alloc]init];
-    }
-    
-}
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
 }
 
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [array count];
 }
+
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -119,6 +112,7 @@
     return cell;
 }
 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -126,6 +120,7 @@
 }
 
 
+//sends pid to ViewPollDetail view in order for the view controller to load data for that pid
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"PollDetailSegue"])

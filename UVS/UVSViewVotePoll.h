@@ -7,9 +7,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UVSViewVotePoll : UIViewController<UITableViewDataSource, UITableViewDelegate, NSURLConnectionDataDelegate>
+@interface UVSViewVotePoll : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *pollTable;
 
+-(void)getListOfPolls;
 
 @end
